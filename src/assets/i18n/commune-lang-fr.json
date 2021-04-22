@@ -1,0 +1,50 @@
+{	
+	"commune": {
+		"name": {
+			"title": "Commune"
+		},
+		"list": {
+			"title": "Recherche commune"
+		},
+		"edit": {
+			"title": "Editer commune"
+		},
+		"add": {
+			"title": "Ajouter commune"
+		},
+		"view": {
+			"title": "Consulter commune"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations commune"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"province": {
+			"label": "Province/Préfecture"
+		},
+		"type": {
+			"label": "Type"
+		}
+
+	}
+}

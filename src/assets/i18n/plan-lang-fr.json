@@ -1,0 +1,43 @@
+{	
+	"plan": {
+		"name": {
+			"title": "Plan"
+		},
+		"list": {
+			"title": "Recherche Plan"
+		},
+		"edit": {
+			"title": "Editer Plan"
+		},
+		"add": {
+			"title": "Ajouter Plan"
+		},
+		"view": {
+			"title": "Consulter Plan"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Plan"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

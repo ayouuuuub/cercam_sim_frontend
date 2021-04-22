@@ -1,0 +1,43 @@
+{
+	"enjeuxStrategique": {
+		"name": {
+			"title": "Enjeux Stratégiques"
+		},
+		"list": {
+			"title": "Recherche Enjeux Stratégiques"
+		},
+		"edit": {
+			"title": "Editer Enjeux Stratégiques"
+		},
+		"add": {
+			"title": "Ajouter Enjeux Stratégiques"
+		},
+		"view": {
+			"title": "Consulter Enjeux Stratégiques"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Enjeux Stratégiques"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"theme": {
+			"label": "Theme"
+		},
+    "dimension" : {
+      "label": "Dimension"
+    }
+	}
+}

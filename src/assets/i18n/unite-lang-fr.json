@@ -1,0 +1,37 @@
+{	
+	"unite": {
+		"name": {
+			"title": "Unite"
+		},
+		"list": {
+			"title": "Recherche unite"
+		},
+		"edit": {
+			"title": "Editer unite"
+		},
+		"add": {
+			"title": "Ajouter unite"
+		},
+		"view": {
+			"title": "Consulter unite"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations unite"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

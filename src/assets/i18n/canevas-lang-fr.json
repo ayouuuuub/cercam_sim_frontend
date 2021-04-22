@@ -1,0 +1,76 @@
+{	
+	"canevas": {
+		"name": {
+			"title": "Canevas"
+		},
+		"list": {
+			"title": "Recherche canevas"
+		},
+		"edit": {
+			"title": "Editer canevas"
+		},
+		"add": {
+			"title": "Ajouter canevas"
+		},
+		"view": {
+			"title": "Consulter canevas"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations canevas"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"fichier": {
+			"label": "Fichier"
+		},
+		"organisme": {
+			"label": "Organisme"
+		},
+		"notification": {
+			"label": "Notification"
+		},
+		"echange": {
+			"label": "Echange"
+		},
+		"cree": {
+			"label": "Cree"
+		}
+	}
+,
+	"canevasHist": {
+		"columne": {
+			"label": "Champs"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"utilisateur": {
+			"label": "Utilisateur"
+		},
+		"username": {
+			"label": "Utilisateur"
+		},
+		"oldValue": {
+			"label": "Ancienne valeur"
+		},
+		"newValue": {
+			"label": "Nouvelle valeur"
+		},					
+		"typeaction": {
+			"label": "Action"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		}
+	}
+}

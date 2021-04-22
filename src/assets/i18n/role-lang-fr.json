@@ -1,0 +1,40 @@
+{	
+	"role": {
+		"name": {
+			"title": "Role"
+		},
+		"list": {
+			"title": "Recherche role"
+		},
+		"edit": {
+			"title": "Editer role"
+		},
+		"add": {
+			"title": "Ajouter role"
+		},
+		"view": {
+			"title": "Consulter role"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations role"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"domaine": {
+			"label": "Domaine"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"categorieRole": {
+			"label": "Catégorie"
+		}
+	}
+}

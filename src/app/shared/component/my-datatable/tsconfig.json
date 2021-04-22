@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "../lib",
+    "declaration": true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es6"
+    ]
+  },
+  "angularCompilerOptions": {
+    "skipTemplateCodeGen": "../aot",
+    "skipMetadataEmit": false
+  }
+}

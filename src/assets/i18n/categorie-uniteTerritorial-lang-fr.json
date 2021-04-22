@@ -1,0 +1,37 @@
+{	
+	"categorieUniteTerritorial": {
+		"name": {
+			"title": "Catégorie Unité Territorial"
+		},
+		"list": {
+			"title": "Recherche Catégorie Unité Territorial"
+		},
+		"edit": {
+			"title": "Editer Catégorie Unité Territorial"
+		},
+		"add": {
+			"title": "Ajouter Catégorie Unité Territorial"
+		},
+		"view": {
+			"title": "Consulter Catégorie Unité Territorial"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Catégorie Unité Territorial"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{	
+	"decoupage": {
+		"name": {
+			"title": "Decoupage"
+		},
+		"list": {
+			"title": "Recherche découpage"
+		},
+		"edit": {
+			"title": "Editer découpage"
+		},
+		"add": {
+			"title": "Ajouter découpage"
+		},
+		"view": {
+			"title": "Consulter découpage"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations découpage"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"type": {
+			"label": "Type"
+		}
+
+	}
+}

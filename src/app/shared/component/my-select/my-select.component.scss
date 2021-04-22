@@ -1,0 +1,63 @@
+.ui-select-multiple {
+    height: auto;
+    padding: 3px 3px 0 3px;
+}
+
+.ui-select-multiple .ui-select-match-item {
+    outline: 0;
+    margin: 0 3px 3px 0;
+}
+
+.ui-select-match-item {
+    white-space: normal !important;
+}
+
+.ui-select-multiple .ui-select-match-item {
+    position: relative;
+}
+
+.caret {
+    margin-top: 9px;
+}
+
+.break-text {
+    width: 75% !important;
+    height: 90%;
+    word-break: break-all;
+    white-space: pre-line;
+    /* text-overflow: ellipsis; */
+    font-size: 80% !important;
+    overflow-y: hidden;
+    width: 85%;
+    height: 90%;
+    text-align: left;
+}
+
+.formcont {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+.has-error .form-control {
+    border-color: #f05050 !important;
+}
+
+.form-group {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+.dropup,
+.dropdown {
+    position: static;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}

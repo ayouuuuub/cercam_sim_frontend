@@ -1,0 +1,78 @@
+<div>
+    <!-- START panel-->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4 class="mt0">{{ 'profil.view.title' | translateProfil }}</h4>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label-view">{{ 'profil.libelle.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							{{ profil.libelle }}
+							</div>
+						</div>
+					</div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label-view">{{ 'profil.description.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							{{ profil.description }}
+							</div>
+						</div>
+					</div>
+				</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label-view">{{ 'profil.actif.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+
+                            <span *ngIf="profil.actif">{{ 'common.text.yes' | translate }}</span>
+							<span *ngIf="!profil.actif">{{ 'common.text.no' | translate }}</span>
+							</div>
+						</div>
+					</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-sm-4 control-label-view">{{ 'profil.regions.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+                          <span *ngFor="let region of profil.regions" style="display: block;width: 100%;" >{{region.label}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  			</div>
+ 		</div>
+ 		<div class="panel panel-default">
+    	<div class="panel-body">
+        <h4 class="mt0">{{ 'profil.roles.label' | translateProfil }}</h4>
+        <hr/>
+    		<app-role readOnly="true" [roleList]="rolesList"></app-role>
+ 		</div>
+ 		</div>
+			<app-trace  [createdBy]="profil.createdBy" [createdOn]="profil.createdOn" [updatedBy]="profil.updatedBy" [updatedOn]="profil.updatedOn"></app-trace>
+    <!-- END panel-->
+    <!-- START panel-->
+    <p>
+    <div class="panel panel-default">
+        <div class="panel-footer text-right">
+            <button  class="btn btn-info" *ngIf="hasRole('ROLE_UPDATE_PROFIL')" type="button" [routerLink]="['/profil/edit', profil.id]"><i class="fa fa-edit"></i> {{ 'common.command.edit' | translate }}</button>
+            <button  class="btn btn-success" *ngIf="hasRole('ROLE_DELETE_PROFIL')" type="button" (click)="deleteProfilModal.showViewModal()"><i class="fa fa-trash"></i> {{ 'common.command.delete' | translate }}</button>
+           <button class="btn" type="button" (click)="retour()">{{ 'common.command.exit' | translate }}</button>
+        </div>
+    </div>
+    <!-- END panel-->
+</div>
+<modalCustom #deleteProfilModal TitreHeader=" {{'common.text.confirmation' | translate }}" size="modal-sm" [ignoreBackdropClick]="false">
+    <div class="modal-body">
+        {{'common.message.confirm.delete' | translate}}
+    </div>
+    <div class="modal-footer">
+        <button class=" btn  btn-success" type="button" (click)="deleteProfil()">{{ 'common.text.yes' | translate }}</button>
+        <button class="btn btn-danger" type="button" (click)="deleteProfilModal.hideViewModal()">{{ 'common.text.no' | translate }}</button>
+    </div>
+</modalCustom>

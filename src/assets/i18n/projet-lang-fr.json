@@ -1,0 +1,55 @@
+{	
+	"projet": {
+		"name": {
+			"title": "Projet"
+		},
+		"list": {
+			"title": "Recherche Projet"
+		},
+		"edit": {
+			"title": "Editer Projet"
+		},
+		"add": {
+			"title": "Ajouter Projet"
+		},
+		"view": {
+			"title": "Consulter Projet"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Projet"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"duree": {
+			"label": "Durée"
+		},
+		"etat": {
+			"label": "Etat d'avancement"
+		},
+		"taux_execution": {
+			"label": "Taux d'execution"
+		},
+		"axe": {
+			"label": "Axe Stratégique"
+		}
+	}
+}

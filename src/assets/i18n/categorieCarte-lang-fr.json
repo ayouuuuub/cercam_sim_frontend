@@ -1,0 +1,40 @@
+{
+    "categorieCarte": {
+        "name": {
+            "title": "Catégorie Cartothèque"
+        },
+        "list": {
+            "title": "Recherche Catégorie Cartothèque"
+        },
+        "edit": {
+            "title": "Editer Catégorie Cartothèque"
+        },
+        "add": {
+            "title": "Ajouter Catégorie Cartothèque"
+        },
+        "view": {
+            "title": "Consulter Catégorie Cartothèque"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations Catégorie Cartothèque"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "code": {
+            "label": "Code"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "ordre": {
+            "label": "Ordre"
+        },
+        "actif": {
+            "label": "Actif"
+        }
+    }
+}

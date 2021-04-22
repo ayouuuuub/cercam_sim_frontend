@@ -1,0 +1,29 @@
+<div>
+  <!-- START panel-->
+  <div class="panel panel-default">
+    <div class="panel-body" [formGroup]="colorForm">
+      <div *ngFor="let parametrage of parametrages;let i=index" formArrayName="colors">
+        <div class="row">
+          <div class="form-group" [formGroupName]="i">
+            <label class="col-sm-4 control-label-view"> {{ parametrage.code }} </label>
+            <div class="col-sm-8">
+              <input type="color" formControlName="valeur" class="circle circle-l"
+                [style.background]="colorForm.controls.colors.value[i].valeur" (change)="updateColors()">
+              {{ colorForm.controls.colors.value[i].valeur }}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-footer text-right">
+      <button class="btn btn-info" *ngIf="hasRole('ROLE_UPDATE_PARAMETRAGE')" type="button"
+        debounceClick (debounceClick)="updateParametrages()"><i class="fa fa-edit"></i>
+        {{ 'common.command.edit' | translate }}</button>
+      <button class="btn" type="button" (click)="retour()">{{ 'common.command.exit' | translate }}</button>
+    </div>
+  </div>
+  <!-- END panel-->
+</div>

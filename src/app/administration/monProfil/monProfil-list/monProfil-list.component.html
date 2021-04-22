@@ -1,0 +1,145 @@
+<div>
+<!-- START panel-->
+<div class="panel panel-default">
+    <form ngNoForm [formGroup]="profilForm"  (keydown.enter)="searchProfils(profilForm.value)"  class="form-validate form-horizontal" (submit)="searchProfils(profilForm.value)" novalidate="">
+  		<div class="panel-body bt">
+  		                 <legend (click)="collapsedInfo = !collapsedInfo">
+  		                 <div class="panel-title">
+                        <i class="fa fa-plus-circle" *ngIf="collapsedInfo" aria-hidden="true"></i>
+                        <i class="fa fa-minus-circle" *ngIf="!collapsedInfo" baria-hidden="true"></i> {{ 'common.legend.search' | translate }}
+                    </div>
+                    </legend>
+          <div class="panel-body ng-scope" [collapse]="collapsedInfo">  		
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'profil.libelle.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							<input formControlName="libelleLike" class="form-control" type="text" placeholder=""/>
+						</div>
+					</div>
+				</div>				
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'profil.description.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							<input formControlName="description" class="form-control" type="text" placeholder=""/>
+						</div>
+					</div>
+				</div>
+			 </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'profil.actif.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+                            <select formControlName="actif" class="form-control">
+                            	<option value= ''>{{ 'common.select.notset' | translate }}</option>
+                                <option [value]='true'>{{ 'common.text.yes' | translate }}</option>
+                                 <option [value]='false'>{{ 'common.text.no' | translate }}</option>
+                            </select>
+						</div>
+					</div>
+				</div>
+			 </div>
+        <div class="panel-footer text-center">
+            <button class="btn btn-info" type="submit" [disabled]="!profilForm.valid"><i class="fa fa-search"></i> {{ 'common.command.search' | translate }}</button>
+            <button class="btn btn-default" type="button" (click)="reset()">{{ 'common.command.reset' | translate }}</button>
+        	<button class="btn btn-success" *ngIf="hasRole('ROLE_CREATE_PROFIL')" type="button" routerLink="/profil/add"><i class="fa fa-plus"></i> {{ 'common.command.add' | translate }}</button> 
+        </div>
+ 		</div>
+ 		</div> 		
+    </form>
+</div>
+<!-- END panel-->
+<div class="panel panel-default" *ngIf="paginatedProfilList">
+            <div class="table-responsive">
+                <table id="profilDataTable" #profilDataTable="mfDataTable1"  class="table table-bordered table-striped table-condensed" [dataLength]="totalprofil" [mfActivePage]="firstProfil" [mfRowsOnPage]="rowsProfil" (onChange)="onChangeProfil($event)" [mfData1]="profilList" [mfSortOrder]="sortOrderProfil" [mfSortBy]="sortFieldProfil" [mfRowsOnPage]="rowsProfil">
+				<thead>
+				<tr>
+				<td colspan="5" class="paginator-data">
+				<mfBootstrapPaginator1 [rowsOnPageSet]="[10,20,100]"></mfBootstrapPaginator1>
+				</td>
+				</tr>
+			<tr>
+			<th class="bt-remove">
+            <button type="button" class="btn btn-danger btn-xs" title="{{  'common.label.delete' | translate }}" [disabled]="!selectedProfils || selectedProfils?.length <= 0" (click)="deleteProfilModal.showViewModal()">
+                <i class="fa fa-trash"></i>
+            </button>
+        </th>
+        <th  class="total-data" colspan="3">
+        <span style="padding-left: 2%" *ngIf="profilList && totalprofil > 0 "> {{ totalprofil }} {{  'common.label.totalRowCount' | translate }}</span>
+        </th>
+		<th class="text-center">
+         <div class="text-center" *ngIf="hasRole('ROLE_EXPORT')">
+            <button type="button" class="btn btn-success btn-xs" [disabled]="!profilList || profilList.length <= 0" (click)="exportProfil('profilDataTable','xls')" title="export csv"><i class="fa fa-file-excel-o"></i></button>
+            <button type="button" class="btn btn-danger btn-xs" [disabled]="!profilList || profilList.length <= 0" (click)="exportProfil('profilDataTable','pdf')" title="export pdf"><i class="fa fa-file-pdf-o"></i></button>
+        </div>
+        </th>
+        </tr>		
+		<tr>
+        <th class="text-center"  style='width:5%'>
+            <div class="checkbox c-checkbox">
+                        <label>
+                            <input type="checkbox" [checked]="isCheckedAllProfil()" (change)="checkAllProfils($event.target.checked)"/>
+                            <span class="fa fa-check"></span>
+                        </label>
+             </div>           
+        </th>
+        	<th class="text-center column" columnName="libelle">
+        	 <mfDefaultSorter1 by="libelle">{{'profil.libelle.label' | translateProfil}}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="description">
+        	 <mfDefaultSorter1 by="description">{{'profil.description.label' | translateProfil}}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="actif">
+        	 <mfDefaultSorter1 by="actif">{{'profil.actif.label' | translateProfil}}</mfDefaultSorter1>
+        	</th>
+	        <th class="actions-col">{{ 'common.label.actions' | translate }}</th>
+	        </tr>
+				</thead>
+				<tbody>
+                    <tr *ngFor="let item of profilDataTable.data; let i = index" [attr.data-index]="i">
+                <td  class="text-center">
+                        <div class="checkbox c-checkbox">
+                        <label>
+                           <input type="checkbox" (change)="checkProfil($event.target.checked,item)" [checked]="isCheckedProfil(item)"/>
+                            <span class="fa fa-check"></span>
+                        </label>
+                        </div> 
+                </td>
+                    <td>
+                        <span (click)="viewProfil(item)" style="cursor: pointer;">{{ item.libelle }}</span>
+                    </td>
+                    <td>
+                        <span (click)="viewProfil(item)" style="cursor: pointer;">{{ item.description }}</span>
+                    </td>
+                    <td class="text-center">
+						<span *ngIf="item.actif" (click)="viewProfil(item)" style="cursor: pointer;"><div class="circle circle-lg circle-success"></div></span>
+						<span *ngIf="!item.actif" (click)="viewProfil(item)" style="cursor: pointer;"><div class="circle circle-lg circle-danger"></div></span>						
+                    </td>
+                <td  class="text-center">
+                    <span  title="Visualser" class="btn btn-xs btn-success" (click)="viewProfil(item)"><i class="fa fa-eye"></i></span>
+                </td>
+            </tr>
+				</tbody>
+				<tfoot>
+            <tr>
+            <td colspan="5">
+            <span *ngIf="!profilList || totalprofil == 0" style='text-align:center;'> {{ 'common.list.empty' | translate }}</span>
+            </td>
+            </tr>
+            </tfoot>
+			</table>
+		</div>
+</div>
+</div>
+<modalCustom #deleteProfilModal TitreHeader=" {{'common.text.confirmation' | translate }}" size="modal-sm" [ignoreBackdropClick]="false">
+    <div class="modal-body">
+        {{'common.message.confirm.deleteAll' | translate}}
+    </div>
+    <div class="modal-footer">
+        <button class=" btn  btn-success" type="button" (click)="deleteProfils()">{{ 'common.text.yes' | translate }}</button>
+        <button class="btn btn-danger" type="button" (click)="deleteProfilModal.hideViewModal()">{{ 'common.text.no' | translate }}</button>
+    </div>
+</modalCustom>

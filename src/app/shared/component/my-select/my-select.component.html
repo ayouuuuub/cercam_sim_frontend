@@ -1,0 +1,123 @@
+<span *ngIf=" multi==='one'  && !disabled">
+              <input
+                *ngIf="selected"
+                ngui-auto-complete
+                [source]="source"
+                [no-match-found-text]="noMatchFoundText"
+                [list-formatter]="autocompleListFormatter"
+                [path-to-data]="pathToData"
+                [min-chars]="minChars"
+                [blank-option-text]="blankOptionText"
+                [accept-user-input]="acceptUserInput"
+                [loading-text]="loadingText"
+                [max-num-list]="maxNumList"
+                [show-dropdown-on-init]="showDropdownOnInit"
+                [tab-to-select]="tabToSelect"
+                [match-formatted]="matchFormatted"
+                display-property-name="{{label}}"
+                byAttrib="{{label}}"
+                [auto-complete-placeholder]="placeholder"
+                (focusout)="focusoutselect($event)"
+                (valueChanged)="resultaText($event)"
+                class="form-control ng-pristine ng-valid ng-touched" />
+    <div  class="form-group dropdown open " tabindex="0" [formGroup]="formcontrol.parent" *ngIf="!selected" (click)="changedSelect(input)" >
+       <div   class="ui-select-match"   >
+           <input [attr.name]="nameControler" type="text" class="formcont" >
+        <span   class="btn btn-default btn-secondary form-control " style="outline: 0;font-size:14px;" tabindex="-1">
+        <span *ngIf="val"  class="  pull-left break-text  " >{{val}}</span>
+<span *ngIf="!val" class="text-muted  pull-left break-text "><span style='color:#555'>{{placeholder}}</span></span>
+<i class="dropdown-toggle pull-right"></i>
+<i class="caret pull-right"></i>
+<a *ngIf="val!=placeholder || val==null || val=='' " class="btn btn-xs btn-link pull-right" style="margin-right: 5px; padding: 0;" (click)="deletitem()">
+    <i class="fa fa-remove"></i>
+</a>
+</span>
+</div>
+</div>
+</span>
+<div class="dropdown open" tabindex="0" style="  cursor: not-allowed;  background-color: #edf1f2 ;   opacity: 1;" *ngIf="disabled">
+
+    <div class="ui-select-match">
+        <span class="  form-control " style="outline: 0;font-size:14px; background-color: #f4f4f4 ;" tabindex="-1">
+       <span *ngIf="val"  class="  pull-left break-text  ">{{val}}</span>
+        <span *ngIf="!val" class="text-muted  pull-left break-text "><span style='color:#555'>{{placeholder}}</span></span>
+        <i class="dropdown-toggle pull-right"></i>
+        <i class="caret pull-right"></i>
+        </span>
+
+
+    </div>
+</div>
+
+
+<span *ngIf="(multi=='tag' || multi=='table') && !disabled">
+       <input
+               ngui-auto-complete
+               [focus]="true"
+               [source]="source"
+               [byAttrib]="byAttrib"
+               [no-match-found-text]="noMatchFoundText"
+               [list-formatter]="autocompleListFormatter"
+               [path-to-data]="pathToData"
+
+               [min-chars]="minChars"
+               [blank-option-text]="blankOptionText"
+               [accept-user-input]="acceptUserInput"
+               [loading-text]="loadingText"
+               [max-num-list]="maxNumList"
+               [show-dropdown-on-init]="showDropdownOnInit"
+               [tab-to-select]="tabToSelect"
+               [match-formatted]="matchFormatted"
+               [auto-complete-placeholder]="placeholder"
+               display-property-name="{{label}}"
+
+               (focusout)="focusoutselect($event)"
+               (valueChanged)="resultaText($event)"
+               class="form-control" />
+      <div  *ngIf="val?.length>0" class="ui-select-container ui-select-multiple dropdown form-control open" tabindex="0">
+        <div *ngIf="multi=='tag'" class="table-responsive" [style.height]="(ArraySelected.length>=numberline )? '60px' :'' ">
+            <span  class="ui-select-match"   >
+                <span  class="ui-select-match-item btn btn-danger btn-secondary btn-xs" tabindex="-1" type="button" (click)="removeall()">
+                    <em   class="fa fa-trash"></em>
+                </span>
+</span>
+<span class="ui-select-match" *ngFor="let item of ArraySelected">
+
+                <span >
+                <span  class="ui-select-match-item btn btn-default btn-secondary btn-xs" tabindex="-1" type="button">
+                   <a  class="close" style="margin-left: 5px; padding: 0;" (click)="deletitem(item[byAttrib])">×</a>
+                   <span >{{item[displayPropertyName]}}</span>
+</span>
+</span>
+
+</span>
+</div>
+<div *ngIf="multi=='table'" class="table-responsive" [style.height]="(ArraySelected.length>=numberline)? '100px' :'' ">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="text-center">
+                    <span class="ui-select-match-item btn btn-default btn-secondary btn-xs" tabindex="-1" type="button" (click)="removeall()">
+                                <em   class="fa   fa-trash"></em>
+                        </span>
+                </th>
+                <th>{{byAttrib | uppercase}}</th>
+                <th>{{displayPropertyName | uppercase}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of ArraySelected">
+                <td class="text-center">
+                    <span class="ui-select-match-item btn btn-danger  btn-secondary btn-xs" tabindex="-1" type="button" (click)="deletitem(item[byAttrib])">
+                            <em   class="fa   fa-remove"></em>
+                        </span>
+                </td>
+                <td class="text-left">{{item[byAttrib]}}</td>
+                <td class="text-left">{{item[displayPropertyName]}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+</div>
+</span>

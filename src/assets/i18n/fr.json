@@ -1,0 +1,517 @@
+{
+  "accesControle": {
+    "title": "Priviléges Insuffisant",
+    "description": "Privilèges d'accès insuffisants."
+  },
+  "erreur": {
+    "title": "Erreur interne",
+    "message": "Une erreur est survenue. Veuillez contacter l'administrateur."
+  },
+  "login": {
+    "submit": {
+      "connexion": "Connexion"
+    },
+    "legend": {
+      "authentification": "Authentification"
+    },
+    "tooltip": {
+      "password": "Mot de passe de l'utilisateur",
+      "authentification": "Authentification",
+      "confirmPassword": "Confirmer votre nouveau mot de passe",
+      "connexion": "Connexion",
+      "label": "Page d'authentification",
+      "username": "Nom d'utilisateur"
+    },
+    "confirmPassword": {
+      "message": "Les mots de passe ne sont pas identiques"
+    },
+    "reset": "Mot de passe oublié ?",
+    "label": {
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer votre nouveau mot de passe",
+      "rememberme": "Garder ma session",
+      "username": "Nom d'utilisateur"
+    },
+    "message": {
+      "logout": "Vous vous êtes déconnectés",
+      "badCredentials": "Login ou mot de passe incorrecte !",
+      "accountDisabled": "Votre compte est désactivé. Veuillez contacter l'administrateur",
+      "accountExpired": "Mot de passe expiré",
+      "error": "Login ou mot de passe incorrecte"
+    },
+    "title": "Authentification"
+  },
+  "list": {
+    "loading": ["Chargement en cours,veuillez patienter..."]
+  },
+  "version": {
+    "button": {
+      "close": "Fermer"
+    }
+  },
+  "accesDatabase": {
+    "message": {
+      "error": "Problème rencontré lors de la connexion à la base de données !"
+    }
+  },
+  "accesServeur": {
+    "message": {
+      "error": "Problème rencontré lors de la connexion au serveur !"
+    }
+  },
+  "home": {
+    "tooltip": {
+      "label": "Page d'accueil"
+    },
+    "title": "Accueil"
+  },
+  "form_error_status_n": " {0} erreurs trouvées dans le formulaire soumis.",
+  "password": {
+    "level": {
+      "label": {
+        "strong": "Elevé",
+        "week": "Faible",
+        "prompt": "Niveau de sécurité de mot de passe",
+        "good": "Bon"
+      }
+    }
+  },
+  "menu": {
+    "application": {
+      "title": "ODT"
+    },
+    "referentiel": {
+      "title": "Référentiel"
+    },
+    "administration": {
+      "title": "Administration"
+    },
+    "gestionProjet": {
+      "title": "Gestion de projet"
+    },
+    "report": {
+      "title": "Report",
+       "add": "Ajouter Report",
+       "list": "Liste Reports",
+       "edit": "Modifier Report",
+       "view": "Consulter Report"
+    },
+    "carteThematique": {
+      "title": "Atlas Cartographique",
+      "add": "Ajouter Atlas Cartographique",
+      "list": "Liste Atlas Cartographique",
+      "view": "Consulter Atlas Cartographique",
+      "edit": "Modifier Atlas Cartographique"
+    },
+    "categorieParametrage": {
+      "title": "Catégorie paramètrage",
+      "add": "Ajouter catégorie paramètrage",
+      "list": "Liste catégorie paramètrage",
+      "view": "Consulter catégorie paramètrage",
+      "edit": "Modifier catégorie paramètrage"
+    },
+    "categorieRole": {
+      "title": "Catégorie rôle",
+      "add": "Ajouter catégorie rôle",
+      "list": "Liste catégorie rôle",
+      "view": "Consulter catégorie rôle",
+      "edit": "Modifier catégorie rôle"
+    },
+    "commune": {
+      "title": "Commune",
+      "add": "Ajouter commune",
+      "list": "Liste commune",
+      "view": "Consulter commune",
+      "edit": "Modifier commune"
+    },
+    "uniteTerritorial": {
+      "title": "Unité Territorial",
+      "add": "Ajouter Unité Territorial",
+      "list": "Liste Unité Territorial",
+      "view": "Consulter Unité Territorial",
+      "edit": "Modifier Unité Territorial"
+    },
+    "dimension": {
+      "title": "Dimension",
+      "add": "Ajouter dimension",
+      "list": "Liste dimension",
+      "view": "Consulter dimension",
+      "edit": "Modifier dimension"
+    },
+    "refindicateur": {
+      "title": "indicateur",
+      "add": "Ajouter indicateur",
+      "list": "Liste indicateur",
+      "view": "Consulter indicateur",
+      "edit": "Modifier indicateur"
+    },
+    "indicateur": {
+      "title": "Indicateur",
+      "add": "Ajouter indicateur",
+      "list": "Liste indicateur",
+      "view": "Consulter indicateur",
+      "edit": "Modifier indicateur"
+    },
+    "enjeuxStrategique": {
+      "title": "Enjeux Stratégiques",
+      "add": "Ajouter enjeux Stratégiques",
+      "list": "Liste enjeux Stratégiques",
+      "view": "Consulter enjeux Stratégiques",
+      "edit": "Modifier enjeux Stratégiques"
+    },
+    "parametrage": {
+      "title": "Paramètrage",
+      "add": "Ajouter paramètrage",
+      "list": "Liste paramètrage",
+      "view": "Consulter paramètrage",
+      "edit": "Modifier paramètrage"
+    },
+    "producteur": {
+      "title": "Producteur",
+      "add": "Ajouter producteur",
+      "list": "Liste producteur",
+      "view": "Consulter producteur",
+      "edit": "Modifier producteur"
+    },
+    "profil": {
+      "title": "Profil",
+      "add": "Ajouter profil",
+      "list": "Liste profil",
+      "view": "Consulter profil",
+      "edit": "Modifier profil"
+    },
+    "province": {
+      "title": "Province",
+      "add": "Ajouter province",
+      "list": "Liste province",
+      "view": "Consulter province",
+      "edit": "Modifier province"
+    },
+    "rapport": {
+      "title": "Rapport",
+      "add": "Ajouter rapport",
+      "list": "Liste rapport",
+      "view": "Consulter rapport",
+      "edit": "Modifier rapport"
+    },
+    "region": {
+      "title": "Region",
+      "add": "Ajouter region",
+      "list": "Liste region",
+      "view": "Consulter region",
+      "edit": "Modifier region"
+    },
+    "requeteStatistique": {
+      "title": "Requete Statistique",
+      "add": "Ajouter requete Statistique",
+      "list": "Liste requete Statistique",
+      "view": "Consulter requete Statistique",
+      "edit": "Modifier requete Statistique"
+    },
+    "role": {
+      "title": "Role",
+      "add": "Ajouter role",
+      "list": "Liste role",
+      "view": "Consulter role",
+      "edit": "Modifier role"
+    },
+    "theme": {
+      "title": "Theme",
+      "add": "Ajouter theme",
+      "list": "Liste theme",
+      "view": "Consulter theme",
+      "edit": "Modifier theme"
+    },
+    "unite": {
+      "title": "Unite",
+      "add": "Ajouter unite",
+      "list": "Liste unite",
+      "view": "Consulter unite",
+      "edit": "Modifier unite"
+    },
+    "utilisateur": {
+      "title": "Utilisateurs",
+      "add": "Ajouter utilisateur",
+      "list": "Liste utilisateurs",
+      "view": "Consulter utilisateur",
+      "edit": "Modifier utilisateur"
+    },
+    "valeurIndicateur": {
+      "title": "ValeurIndicateur",
+      "add": "Ajouter valeurIndicateur",
+      "list": "Liste valeurIndicateur",
+      "view": "Consulter valeurIndicateur",
+      "edit": "Modifier valeurIndicateur"
+    },
+    "plan": {
+      "title": "Plan",
+      "add": "Ajouter plan",
+      "list": "Liste plan",
+      "view": "Consulter plan",
+      "edit": "Modifier plan"
+    },
+    "projet": {
+      "title": "Projet",
+      "add": "Ajouter projet",
+      "list": "Liste projet",
+      "view": "Consulter projet",
+      "edit": "Modifier projet"
+    },
+    "CategorieUniteTerritorial": {
+      "title": "Axe Stratégique",
+      "add": "Ajouter Axe Stratégique",
+      "list": "Liste Axe Stratégique",
+      "view": "Consulter Axe Stratégique",
+      "edit": "Modifier Axe Stratégique"
+    }
+  },
+  "common": {
+    "confirm": {
+      "removeFile": "Voulez-vous vraiment supprimer cette pièce jointe ?"
+    },
+    "select": {
+      "notset": "<< Non défini >>",
+      "empty": "Aucun élément sélectionné"
+    },
+    "copyrights": {
+      "label": "@ 2017 ODT - Tous droits réservés."
+    },
+    "legend": {
+      "search": "Critères de recherche",
+      "results": "Résultat"
+    },
+    "label": {
+      "download": "Télécharger",
+      "delete": " Supprimer",
+      "actions": "Actions",
+      "update": "Modifier",
+      "updatedon": "Dernière modification le : ",
+      "createdon": "Créé le : ",
+      "by": " par : ",
+      "created": "Date de création",
+      "disable": "Désactiver",
+      "activate": "Activer",
+      "newFile": "Ajouter un nouveau",
+      "totalRowCount": " enregistrement(s) trouvé(s)",
+      "updated": "Date de modification"
+    },
+    "text": {
+      "no": "NON",
+      "yes": "OUI",
+      "false": "NON",
+      "true": "OUI",
+      "confirmation": "Confirmation",
+      "info": "Information",
+      "warning": "Attention"
+    },
+    "message": {
+      "sessionExpired": "Votre session a expiré !",
+      "noItem": "Aucun élément à consulter !",
+      "image": {
+        "error": "Aucune image sélectionnée"
+      },
+      "chooseFile": "Choisir un fichier",
+      "update": {
+        "info": "Modification effectuée avec succès"
+      },
+      "confirmation": "Voulez-vous continuer ?",
+      "required": "Ce champ est obligatoire !",
+      "valid": {
+        "nombre": "Veuillez saisir un nombre valide.",
+        "date": "Veuillez saisir une date valide,  format : jj/mm/aaaa",
+        "time": "Veuillez saisir une heure valide,  format : HH:mm"
+      },
+      "incorrectFormat": "Format incorrect !",
+      "fileNotFound": "Fichier introuvable !",
+      "invalidSizeMessage": "Fichier trop volumineux (10 MB maximum)",
+      "invalidSize": "Fichier vide",
+      "delete": {
+        "info": "Suppression effectuée avec succès"
+      },
+      "resetPassword": {
+        "mail": "le message de réintialisation a été envoyé, veuillez vérifier votre boîte mail",
+        "mailError": "le mail saisi est incorrect ou introuvable",
+        "info": "Le mot de passe a été réinitialisé avec succès"
+      },
+      "confirm": {
+        "delete": "Êtes-vous sûr de vouloir supprimer cet enregistrement ?",
+        "deleteAll": "Êtes-vous sûr de vouloir supprimer ces enregistrements ?",
+        "ecraser": "Attention les données sont déjà injectées, voulez-vous écraser les données",
+        "resetPassword": "Êtes-vous sûr de vouloir réinitialiser le mot de passe  de cet utilisateur !"
+      },
+      "invalidFileMessage": "Seuls les formats de fichier : doc, docx, xls, xlsx, pdf, txt, zip, rar, png, gif, jpg, jpeg, xml sont supportés",
+      "file": {
+        "error": "Aucun fichier sélectionné"
+      },
+      "chooseImage": "Choisir une image",
+      "create": {
+        "info": "Enregistrement effectué avec succès"
+      }
+    },
+    "list": {
+      "select": {
+        "empty": "Veuillez d'abord effectuer une sélection dans la liste"
+      },
+      "notset": "Non défini",
+      "empty": "Aucun enregistrement trouvé"
+    },
+    "error": {
+      "invalidChar": "Caractères invalides !",
+      "delete": "Impossible de supprimer cette enregistrement  car il est dèjà  utilisé"
+    },
+    "editPassword": {
+      "title": "Changer le mot de passe",
+      "label": {
+          "password": "Nouveau mot de passe",
+          "confirmPassword": "Confirmer le nouveau mot de passe",
+          "minLengthPassword": "Les mots de passe doivent contenir au moins 6 caractères",
+          "notEqualPassword": "Ces mots de passe ne correspondent pas !!",
+          "currentPassword": "Mot de passe actuel",
+          "emailResetPassword": "Veuillez saisir votre email vers lequel votre nouveau mot de passe sera envoyé"
+      }
+    },
+    "welcome": "Bienvenue",
+    "command": {
+      "sysDate": "Date système",
+      "cancel": "Annuler",
+      "endDate": "Date de fin",
+      "save": "Enregistrer",
+      "link": "Votre lien ici",
+      "back": "Retour",
+      "saveAndQuit": "Enregistrer et quitter",
+      "login": "Page de login",
+      "delete": "Supprimer",
+      "desactiver": "Désactiver",
+      "selectionItem": "Eléments à  sélectionner",
+      "refreshList": "Actualiser la liste",
+      "search": "Rechercher",
+      "download": "Télécharger",
+      "view": "Visualiser",
+      "check": "Vérifier",
+      "valid": "Valider",
+      "selectableItem": "Elements à  sélectionnés",
+      "viewChart": "Visualiser le graphe",
+      "saveAndNew": "Enregistrer et nouveau",
+      "refrech": "Actualiser",
+      "details": "Détails",
+      "generate": "Démarrer la génération",
+      "others": "Autres",
+      "add": "Ajouter",
+      "close": "Fermer",
+      "new": "Nouveau",
+      "deselectAll": "Tout supprimer",
+      "edit": "Modifier",
+      "clear": "Effacer",
+      "refresh": "Actualiser",
+      "editMyProfil": "Modifier mon profil",
+      "champstouches": "Gestion des champs touches",
+      "home": "Page d'accueil",
+      "filter": "Filtrer",
+      "exit": "Quitter",
+      "selectAll": "Tout ajouter",
+      "print": "Imprimer",
+      "pdf": "PDF",
+      "editPassword": "Modifier le mot de passe",
+      "clone": "Copier",
+      "reset": "Réinitialiser",
+      "actions": "Actions",
+      "startDate": "Date de début",
+      "xls": "XLS",
+      "statistics": "Statistiques",
+      "deconnecter": "Se déconnecter"
+    },
+    "entity": {
+      "label": {
+        "dateAction": "Date Action"
+      }
+    }
+  },
+  "application": {
+    "ar": "Arabe",
+    "logout": "Déconnecter",
+    "edit": {
+      "myprofil": "Mon profil"
+    },
+    "name": "ODT",
+    "about": "A propos",
+    "description": "",
+    "header": {
+      "title": "ODT"
+    },
+    "label": {
+      "help": "Aide ?",
+      "build": "Build :",
+      "version": "Version :"
+    },
+    "loading": ["Traitement en cours, veuillez patienter..."],
+    "fr": "Français",
+    "welcome": "",
+    "home": "Accueil"
+  },
+  "listStatistique": {
+    "legend": {
+      "graphe": "Paramétrage graphique"
+    },
+    "label": {
+      "barchart": "graphique à  barres",
+      "requete": "Tableaux de bord",
+      "typeGraphe": "Type graphique",
+      "piechart": "camembert",
+      "yaxe": "Axe Y",
+      "xaxe": "Axe X",
+      "linechart": "graphique en ligne"
+    },
+    "title": "Tableaux de bord"
+  },
+  "reset": {
+    "button": {
+      "submit": "Envoyer"
+    },
+    "legend": {
+      "form": "Reset",
+      "success": "Congratulations"
+    },
+    "label": {
+      "email": "Email"
+    },
+    "message": {
+      "success": "Verifier votre boite mail '{0}' pour récupérer votre mot de passe",
+      "error": "Email incorrect"
+    },
+    "title": {
+      "success": "Reset success",
+      "saisieEmail": "Mot de passe oublié"
+    }
+  },
+  "errors": {
+    "boolean": "{0} doit être un boolean",
+    "uploadfile": "Erreur lors du chargement du fichier",
+    "double": "{0} doit être un décimal",
+    "unique": "{0}  existe dèjà ",
+    "integer": "{0} doit être un entier",
+    "long": "{0} doit être un entier",
+    "required": "{0} est obligatoire",
+    "currentPassword": "Le mot de passe actuel est incorrect !"
+  },
+  "editPassword": {
+    "title": "Changer mon mot de passe",
+    "label": {
+      "password": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe",
+      "currentPassword": "Mot de passe actuel"
+    }
+  },
+  "editDefaultPassword": {
+    "title": "Saisir le nouveau mot de passe",
+    "label": {
+      "password": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe"
+    }
+  },
+  "editMyProfil": {
+    "title": "Modifier mon profil",
+    "legend": {
+      "info": "Informations du profil"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<div>
+  <!-- START panel-->
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+
+        <div *ngFor="let parametrage of parametrages">
+      <div class="row">
+
+          <div class="form-group">
+            <label class="col-sm-4 control-label-view"> {{ parametrage.code }} </label>
+            <div class="col-sm-8">
+              <div class="circle circle-l" [style.background]="parametrage.valeur"></div>
+              {{ parametrage.valeur }}
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-footer text-right">
+      <button class="btn btn-info" *ngIf="hasRole('ROLE_UPDATE_PARAMETRAGE')"
+        type="button" [routerLink]="parametrages[0]?.region ? ['/parametrage/edit-color', parametrages[0]?.region.id] : ['/parametrage/edit-color/national']"><i class="fa fa-edit"></i>
+        {{ 'common.command.edit' | translate }}</button>
+      <button class="btn" type="button" (click)="retour()">{{ 'common.command.exit' | translate }}</button>
+    </div>
+  </div>
+  <!-- END panel-->
+</div>

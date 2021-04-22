@@ -1,0 +1,43 @@
+{	
+	"region": {
+		"name": {
+			"title": "Region"
+		},
+		"list": {
+			"title": "Recherche region"
+		},
+		"edit": {
+			"title": "Editer region"
+		},
+		"add": {
+			"title": "Ajouter region"
+		},
+		"view": {
+			"title": "Consulter region"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations region"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

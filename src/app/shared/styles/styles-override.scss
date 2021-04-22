@@ -1,0 +1,114 @@
+fieldset {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.panel {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content-wrapper .content-heading {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+
+.content-wrapper .content-heading {
+    font-size: 20px;
+}
+
+legend {
+    font-size: 18px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tab-content {
+    background: white;
+}
+
+.modal {
+    top: 30px;
+}
+
+.control-label-view {
+    text-align: right;
+}
+
+.form-group .control-label-view:after {
+    content: " : ";
+}
+
+#toast-container>div {
+    width: auto;
+    min-width: 300px;
+}
+
+.tree-node {
+    font-size: 18px;
+}
+
+.node-content-wrapper,
+.tree-children {
+    position: relative;
+}
+
+.node-content-wrapper::before,
+.tree-children::after {
+    content: "";
+    position: absolute;
+}
+
+.node-content-wrapper::before {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    height: 28px;
+    top: -17px;
+    width: 20px;
+    left: -28px;
+}
+
+.tree-node-leaf>.node-wrapper>.node-content-wrapper::before {
+    width: 25px;
+}
+
+.tree-children::after {
+    border-left: 1px solid white;
+    height: 100%;
+    top: -15px;
+    left: -15px;
+}
+
+.node-CATEGORIE {
+    color: black;
+}
+
+.node-ROLE {
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+treenode:last-child>.tree-node>.tree-children::after {
+    border-left: none;
+}
+
+.toggle-children {
+    z-index: 1;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    top: 6px !important;
+}
+
+.has-error .control-label,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: #656565 !important;
+}

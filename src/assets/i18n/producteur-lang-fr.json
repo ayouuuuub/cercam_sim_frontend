@@ -1,0 +1,43 @@
+{
+    "producteur": {
+        "name": {
+            "title": "Producteur"
+        },
+        "list": {
+            "title": "Recherche producteur"
+        },
+        "edit": {
+            "title": "Editer producteur"
+        },
+        "add": {
+            "title": "Ajouter producteur"
+        },
+        "view": {
+            "title": "Consulter producteur"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "legend": {
+            "info": "Informations producteur"
+        },
+        "nom": {
+            "label": "Nom"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "nomContact": {
+            "label": "Nom du contact"
+        },
+        "ordre": {
+            "label": "Ordre"
+        },
+        "actif": {
+            "label": "Actif"
+        }
+    }
+}

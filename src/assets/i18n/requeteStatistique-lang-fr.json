@@ -1,0 +1,58 @@
+{	
+	"requeteStatistique": {
+		"name": {
+			"title": "RequeteStatistique"
+		},
+		"list": {
+			"title": "Recherche requeteStatistique"
+		},
+		"edit": {
+			"title": "Editer requeteStatistique"
+		},
+		"add": {
+			"title": "Ajouter requeteStatistique"
+		},
+		"view": {
+			"title": "Consulter requeteStatistique"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations requeteStatistique"
+		},
+		"intitule": {
+			"label": "Intitulé"
+		},
+		"typePortee": {
+			"label": "TypePortee"
+		},
+		"idPortee": {
+			"label": "IdPortee"
+		},
+		"seuil": {
+			"label": "Seuil"
+		},
+		"idIndice": {
+			"label": "IdIndice"
+		},
+		"anee": {
+			"label": "Anee"
+		},
+		"debutinterval": {
+			"label": "Debutinterval"
+		},
+		"ininterval": {
+			"label": "Ininterval"
+		},
+		"typePeriode": {
+			"label": "TypePeriode"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

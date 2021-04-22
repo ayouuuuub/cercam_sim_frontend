@@ -1,0 +1,79 @@
+{	
+	"organisme": {
+		"name": {
+			"title": "Organisme"
+		},
+		"list": {
+			"title": "Recherche organisme"
+		},
+		"edit": {
+			"title": "Editer organisme"
+		},
+		"add": {
+			"title": "Ajouter organisme"
+		},
+		"view": {
+			"title": "Consulter organisme"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations organisme"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"adresse": {
+			"label": "Adresse"
+		},
+		"type": {
+			"label": "Type"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+        "email": {
+            "label": "Email"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        }
+	}
+,
+	"organismeHist": {
+		"columne": {
+			"label": "Champs"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"utilisateur": {
+			"label": "Utilisateur"
+		},
+		"username": {
+			"label": "Utilisateur"
+		},
+		"oldValue": {
+			"label": "Ancienne valeur"
+		},
+		"newValue": {
+			"label": "Nouvelle valeur"
+		},					
+		"typeaction": {
+			"label": "Action"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		}
+	}
+}

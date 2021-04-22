@@ -1,0 +1,49 @@
+{
+	"uniteTerritorial": {
+		"name": {
+			"title": "Unité Territorial"
+		},
+		"list": {
+			"title": "Recherche Unité Territorial"
+		},
+		"edit": {
+			"title": "Editer Unité Territorial"
+		},
+		"add": {
+			"title": "Ajouter Unité Territorial"
+		},
+		"view": {
+			"title": "Consulter Unité Territorial"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Unité Territorial"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"categorie": {
+			"label": "Catégorie"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"espaceProjet": {
+			"label": "Espace Projet"
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{	
+	"profil": {
+		"name": {
+			"title": "Profil"
+		},
+		"list": {
+			"title": "Recherche profil"
+		},
+		"edit": {
+			"title": "Editer profil"
+		},
+		"add": {
+			"title": "Ajouter profil"
+		},
+		"view": {
+			"title": "Consulter profil"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations profil"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"roles": {
+			"label": "Rôles"
+		},
+		"ordre":{
+			"label": "Ordre"
+		},
+		"regions":{
+			"label": "Régions"
+		}
+	},
+	"role": {
+		"name": {
+			"title": "Role"
+		},
+		"add": {
+			"title": "Ajouter role"
+		},
+		"view": {
+			"title": "Consulter role"
+		},
+		"legend": {
+			"info": "Informations role"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"domaine": {
+			"label": "Domaine"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"categorieRole": {
+			"label": "Catégorie"
+		}
+	}
+
+}

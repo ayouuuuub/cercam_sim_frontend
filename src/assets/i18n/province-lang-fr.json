@@ -1,0 +1,46 @@
+{	
+	"province": {
+		"name": {
+			"title": "Province"
+		},
+		"list": {
+			"title": "Recherche province"
+		},
+		"edit": {
+			"title": "Editer province"
+		},
+		"add": {
+			"title": "Ajouter province"
+		},
+		"view": {
+			"title": "Consulter province"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations province"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"region": {
+			"label": "Region"
+		}
+	}
+}

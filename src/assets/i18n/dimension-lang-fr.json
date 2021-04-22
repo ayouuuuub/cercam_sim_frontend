@@ -1,0 +1,37 @@
+{	
+	"dimension": {
+		"name": {
+			"title": "Dimension"
+		},
+		"list": {
+			"title": "Recherche dimension"
+		},
+		"edit": {
+			"title": "Editer dimension"
+		},
+		"add": {
+			"title": "Ajouter dimension"
+		},
+		"view": {
+			"title": "Consulter dimension"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations dimension"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

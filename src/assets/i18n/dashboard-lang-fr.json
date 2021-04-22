@@ -1,0 +1,44 @@
+{	
+	"dashboard": {
+		"name": {
+			"title": "Dashboard"
+		},
+		"list": {
+			"title": "Recherche Dashboard"
+		},
+		"edit": {
+			"title": "Editer Dashboard"
+		},
+		"add": {
+			"title": "Ajouter Dashboard"
+		},
+		"view": {
+			"title": "Consulter Dashboard"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Dashboard"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"description": {
+			"label": "Description"
+        },
+        "type":{
+            "label": "Type"
+        },
+		"composante": {
+			"label": "Composantes"
+		},
+		"etat":{
+			"label": "Etat"
+		}
+		
+	}
+}

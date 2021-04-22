@@ -1,0 +1,90 @@
+{
+	"cercle": {
+		"name": {
+			"title": "cercle"
+		},
+		"list": {
+			"title": "Recherche cercle"
+		},
+		"edit": {
+			"title": "Editer cercle"
+		},
+		"add": {
+			"title": "Ajouter cercle"
+		},
+		"view": {
+			"title": "Consulter cercle"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations cercle"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"region": {
+			"label": "Region"
+		}
+	},
+  "prefArr": {
+    "name": {
+        "title": "préfecture d'arrondissements"
+    },
+    "list": {
+        "title": "Recherche préfecture d'arrondissements"
+    },
+    "edit": {
+        "title": "Editer préfecture d'arrondissements"
+    },
+    "add": {
+        "title": "Ajouter préfecture d'arrondissements"
+    },
+    "view": {
+        "title": "Consulter préfecture d'arrondissements"
+    },
+    "historique": {
+        "title": "Historique des modifications"
+    },
+    "legend": {
+        "info": "Informations préfecture d'arrondissements"
+    },
+    "libelle": {
+        "label": "Libellé"
+    },
+    "code": {
+        "label": "Code"
+    },
+    "codeHCP": {
+        "label": "CodeHCP"
+    },
+    "description": {
+        "label": "Description"
+    },
+    "ordre": {
+        "label": "Ordre"
+    },
+    "actif": {
+        "label": "Actif"
+    },
+    "region": {
+        "label": "Region"
+    }
+  }
+}

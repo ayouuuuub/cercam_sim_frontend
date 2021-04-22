@@ -1,0 +1,37 @@
+{	
+	"zone": {
+		"name": {
+			"title": "Zone"
+		},
+		"list": {
+			"title": "Recherche zone"
+		},
+		"edit": {
+			"title": "Editer zone"
+		},
+		"add": {
+			"title": "Ajouter zone"
+		},
+		"view": {
+			"title": "Consulter zone"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations zone"
+		},
+		"nom": {
+			"label": "Nom"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"commune": {
+			"label": "Commune"
+		}
+	}
+}

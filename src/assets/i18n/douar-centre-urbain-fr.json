@@ -1,0 +1,134 @@
+{
+	"douar": {
+		"name": {
+			"title": "douar"
+		},
+		"list": {
+			"title": "Recherche douar"
+		},
+		"edit": {
+			"title": "Editer douar"
+		},
+		"add": {
+			"title": "Ajouter douar"
+		},
+		"view": {
+			"title": "Consulter douar"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations douar"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"commune": {
+			"label": "Commune"
+		}
+	},
+  "centreUrb": {
+		"name": {
+			"title": "centre urbain"
+		},
+		"list": {
+			"title": "Recherche centre urbain"
+		},
+		"edit": {
+			"title": "Editer centre urbain"
+		},
+		"add": {
+			"title": "Ajouter centre urbain"
+		},
+		"view": {
+			"title": "Consulter centre urbain"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations centre urbain"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"commune": {
+			"label": "Commune"
+		}
+	},
+  "arrond": {
+		"name": {
+			"title": "arrondissement"
+		},
+		"list": {
+			"title": "Recherche arrondissement"
+		},
+		"edit": {
+			"title": "Editer arrondissement"
+		},
+		"add": {
+			"title": "Ajouter arrondissement"
+		},
+		"view": {
+			"title": "Consulter arrondissement"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations arrondissement"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"codeHCP": {
+			"label": "CodeHCP"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"commune": {
+			"label": "Commune"
+		}
+	}
+}

@@ -1,0 +1,66 @@
+<div>
+<form ngNoForm [formGroup]="profilForm" class="form-validate form-horizontal" (submit)="saveProfil(profilForm.value)" novalidate="">
+
+    <!-- START panel-->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4 class="mt0">{{ 'profil.add.title' | translateProfil }}</h4>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group required">
+                        <label class="col-sm-4 control-label">{{ 'profil.libelle.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							<input formControlName="libelle" class="form-control" type="text" placeholder=""/>
+                            <span class="text-danger" *ngIf="profilForm.controls['libelle'].hasError('required') && (profilForm.controls['libelle'].dirty || profilForm.controls['libelle'].touched)">{{ 'common.message.required' | translate }}</span>
+							</div>
+						</div>
+					</div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'profil.description.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							<textarea rows="3" cols="2" formControlName="description" class="form-control" placeholder=""></textarea>                           
+							</div>
+						</div>
+					</div>
+				</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'profil.actif.label' | translateProfil }}</label>
+                        <div class="col-sm-8">
+							<span>{{ 'common.text.no' | translate }}</span>
+                            <label class="switch">
+                        		<input type="checkbox" formControlName="actif" />
+                        		<span></span>
+                      		</label>
+                      		<span>{{ 'common.text.yes' | translate }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+  			</div>
+ 		</div>
+ 		<div class="panel panel-default" *ngIf="rolesSelected">
+            <div class="panel-body">
+                <h4 class="mt0">{{ 'profil.roles.label' | translateProfil }}</h4>
+                <hr/>
+                <app-role [roleList]="rolesSelected" (rolesListSelected)="putRolesList($event)"></app-role>
+            </div>
+    	</div>
+    <!-- END panel-->
+    <!-- START panel-->
+    <p>
+    <div class="panel panel-default">
+        <div class="panel-footer text-right">
+            <button class="btn btn-info" debounceClick (debounceClick)="saveProfil(profilForm.value)"><i class="fa fa-save"></i> {{ 'common.command.saveAndNew' | translate }}</button>
+            <button class="btn btn-info" debounceClick (debounceClick)="saveProfil(profilForm.value)" (click)="saveAndQuit=true"><i class="fa fa-save"></i> {{ 'common.command.saveAndQuit' | translate }}</button>
+            <button class="btn btn-default" type="button" (click)="reset()">{{ 'common.command.reset' | translate }}</button>
+            <button class="btn" type="button" routerLink="/profil/list">{{ 'common.command.exit' | translate }}</button>
+        </div>
+    </div>
+    <!-- END panel-->
+</form>
+<!-- END panel-->
+</div>

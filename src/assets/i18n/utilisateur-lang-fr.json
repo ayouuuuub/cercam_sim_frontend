@@ -1,0 +1,155 @@
+{
+    "utilisateur": {
+        "name": {
+            "title": "Utilisateurs"
+        },
+        "list": {
+            "title": "Recherche utilisateurs"
+        },
+        "edit": {
+            "title": "Editer utilisateur"
+        },
+        "add": {
+            "title": "Ajouter utilisateur"
+        },
+        "view": {
+            "title": "Consulter utilisateurs"
+        },
+        "historique": {
+          "title": "Historique des modifications"
+        },
+        "authLegend": {
+          "info": "Informations d'authentificatio"
+        },
+        "legend": {
+            "info": "Informations utilisateurs"
+        },
+        "lastname": {
+            "label": "Nom"
+        },
+        "firstname": {
+            "label": "Prénom"
+        },
+        "adresse": {
+            "label": "Adresse"
+        },
+        "image": {
+          "label" : "Photo de profil"
+        },
+        "email": {
+            "label": "E-mail"
+        },
+        "telephone": {
+            "label": "Téléphone"
+        },
+        "commentaire": {
+            "label": "Commentaire"
+        },
+        "username": {
+            "label": "Identifiant"
+        },
+        "password": {
+            "label": "Mot de passe"
+        },
+        "enabled": {
+            "label": "Activé"
+        },
+        "producteur": {
+            "label": "Producteur"
+        },
+        "region": {
+            "label": "Région"
+        },
+        "responsable": {
+            "label": "Responsable d'échange"
+        },
+
+        "resetPassword": {
+            "label": "Réinitialiser le mot de passe"
+        },
+        "oldPassword": {
+            "label": "Ancien mot de passe"
+        },
+        "newPassword": {
+            "label": "Nouveau mot de passe"
+        },
+        "profil": {
+            "label": "Profil"
+        },
+        "indicateurs": {
+            "label": "indicateur"
+        },
+
+        "organisme": {
+            "label": "Organisme"
+        }
+    },
+    "indicateur": {
+        "name": {
+            "title": "Indicateur"
+        },
+        "list": {
+            "title": "Recherche indicateur"
+        },
+        "edit": {
+            "title": "Editer indicateur"
+        },
+        "add": {
+            "title": "Ajouter indicateur"
+        },
+        "view": {
+            "title": "Consulter indicateur"
+        },
+        "legend": {
+            "info": "Informations indicateur"
+        },
+        "historique": {
+            "title": "Historique des modifications"
+        },
+        "libelle": {
+            "label": "Libellé"
+        },
+        "definition": {
+            "label": "Definition"
+        },
+        "dateProduction": {
+            "label": "DateProduction"
+        },
+        "dateProductionFrom": {
+            "label": "DateProduction entre"
+        },
+        "dateProductionTo": {
+            "label": "Et"
+        },
+        "periodicite": {
+            "label": "Periodicite"
+        },
+        "typeIndicateur": {
+            "label": "TypeIndicateur"
+        },
+        "frequence": {
+            "label": "Frequence"
+        },
+        "modeAcces": {
+            "label": "ModeAcces"
+        },
+        "source": {
+            "label": "Source"
+        },
+        "ordre": {
+            "label": "Ordre"
+        },
+        "actif": {
+            "label": "Actif"
+        },
+        "producteur": {
+            "label": "Producteur"
+        },
+        "unite": {
+            "label": "Unite"
+        },
+        "personneContact": {
+            "label": "PersonneContact"
+        }
+    }
+}

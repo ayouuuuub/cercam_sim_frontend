@@ -1,0 +1,53 @@
+<script src="../../../../../../Dossier_ENOVA/Wep Map Context/owscontext/OwsContextService.js"></script>
+<div class="panel panel-default" *ngIf="paginatedLogList">
+  <div class="table-responsive">
+    <table id="logDataTable" #logDataTable="mfDataTable1" class="table table-bordered table-striped table-condensed"
+           [dataLength]="totalLog" [mfActivePage]="firstlog" [mfRowsOnPage]="rowslog" (onChange)="onChangeLog($event)"
+           [mfData1]="logList" [mfSortOrder]="sortOrderlog" [mfSortBy]="sortFieldlog" [mfRowsOnPage]="rowslog">
+      <thead>
+      <tr>
+        <td colspan="6" class="paginator-data">
+          <mfBootstrapPaginator1 [rowsOnPageSet]="[10,20,100]"></mfBootstrapPaginator1>
+        </td>
+      </tr>
+      <tr>
+        <th  class="total-data" colspan="3">
+          <span style="padding-left: 2%" *ngIf="logList && totalLog > 0 "> {{ totalLog }} {{ 'common.label.totalRowCount' | translate }}</span>
+        </th>
+      </tr>
+      <tr>
+        <th class="text-center column" columnName="libelle">
+          <mfDefaultSorter1 by="username">Utilisateur</mfDefaultSorter1>
+        </th>
+        <th class="text-center column" columnName="description">
+          <mfDefaultSorter1 by="typeaction">Erreur</mfDefaultSorter1>
+        </th>
+        <th class="text-center column" columnName="actif">
+          <mfDefaultSorter1 by="date">Date de l'erreur</mfDefaultSorter1>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of logDataTable.data; let i = index" [attr.data-index]="i">
+        <td>
+          <span style="cursor: pointer;">{{ item.username }}</span>
+        </td>
+        <td>
+          <span style="cursor: pointer;">{{ item.error }}</span>
+        </td>
+        <td>
+          <span style="cursor: pointer;">{{ item.dateError }}</span>
+        </td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="6">
+          <span *ngIf="!logList || totalLog == 0" style='text-align:center;'> {{ 'common.list.empty' | translate }}</span>
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+ 
+</div>

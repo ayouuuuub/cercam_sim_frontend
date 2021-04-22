@@ -1,0 +1,93 @@
+<div id="mySidebar" class="sidebar d-flex flex-column">
+
+  <div class="topPanel mb-auto p-2">
+  <a class="disabled" [routerLink]="['/exploitation']">
+    <div style="padding: 15px; height: 105px;">
+      <img src="/assets/img/logo-text.png">
+    </div>
+  </a>
+  <a [routerLink]="['/exploitation/add']">
+    <div>
+      <span><i class="material-icons">dashboard</i>
+      <span class="icon-text">Dashboard</span>
+    </span>
+  </div>
+  </a>
+  <a>
+    <div>
+      <span><i class="material-icons">show_chart</i>
+        <span class="icon-text">Commercialisation</span>
+      </span>
+    </div>
+  </a>
+  <a>
+    <div>
+      <span><i class="material-icons">signal_cellular_alt</i>
+        <span class="icon-text"></span>
+        Statistiques
+      </span>
+    </div>
+  </a>
+  <a class="disabled"><div></div></a>
+  <hr>
+  <a class="disabled"><div></div></a>
+  <a [routerLink]="['/exploitant/add']">
+    <div>
+      <span><i class="material-icons">layers</i>
+        <span class="icon-text"></span>
+        Nouvelle Simulation
+      </span>
+    </div>
+  </a>
+  <a>
+    <div>
+      <span><i class="material-icons">adjust</i>
+        <span class="icon-text"></span>
+        Simuler une activité
+      </span>
+    </div>
+  </a>
+  <a >
+    <div>
+      <span><i class="material-icons">view_in_ar</i>
+        <span class="icon-text"></span>
+        Simuler une exploitation
+      </span>
+    </div>
+  </a>
+  <a class="disabled"><div></div></a>
+  <hr>
+  <a class="disabled"><div></div></a>
+  <a >
+    <div>
+      <span><i class="material-icons">history_toggle_off</i>
+        <span class="icon-text"></span>
+        Historique
+      </span>
+    </div>
+  </a>
+  <a class="disabled"><div></div></a>
+  </div>
+  <div class="bottomPanel p-2">
+    <a class="disabled"><div></div></a>
+    <a>
+      <div>
+        <span><i class="material-icons">settings</i>
+          <span class="icon-text"></span>
+          Configuration
+        </span>
+      </div>
+    </a>
+    <a class="disabled"><div></div></a>
+    <hr>
+    <a class="disabled"><div></div></a>
+    <a debounceClick (debounceClick)="logout()">
+      <div>
+        <span><i class="material-icons">power_settings_new</i>
+          <span class="icon-text"></span>
+          {{'common.command.deconnecter' | translate}}
+        </span>
+      </div>
+    </a>
+  </div>
+</div>

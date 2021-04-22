@@ -1,0 +1,13 @@
+table > tbody > tr > td {
+  width: 500px;
+}
+
+.showImage {
+  cursor:pointer;
+  background: transparent;
+  margin: 0 .5em;
+}
+
+.showImage:hover {
+  color: #ff2828;
+}

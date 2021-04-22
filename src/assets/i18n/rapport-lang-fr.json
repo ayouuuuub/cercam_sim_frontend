@@ -1,0 +1,37 @@
+{	
+	"rapport": {
+		"name": {
+			"title": "Rapport"
+		},
+		"list": {
+			"title": "Recherche rapport"
+		},
+		"edit": {
+			"title": "Editer rapport"
+		},
+		"add": {
+			"title": "Ajouter rapport"
+		},
+		"view": {
+			"title": "Consulter rapport"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations rapport"
+		},
+		"intitule": {
+			"label": "Intitulé"
+		},
+		"source": {
+			"label": "Source"
+		},
+		"carteThematique": {
+			"label": "CarteThematique"
+		},
+		"requeteStatistique": {
+			"label": "RequeteStatistique"
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{	
+	"theme": {
+		"name": {
+			"title": "Theme"
+		},
+		"list": {
+			"title": "Recherche theme"
+		},
+		"edit": {
+			"title": "Editer theme"
+		},
+		"add": {
+			"title": "Ajouter theme"
+		},
+		"view": {
+			"title": "Consulter theme"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations theme"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"dimension": {
+			"label": "Dimension"
+		}
+	}
+}

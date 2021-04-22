@@ -1,0 +1,63 @@
+<div>
+  <tabset>
+    <tab>
+      <ng-template tabHeading>{{ 'parametrage.view.title' | translateParametrage }}</ng-template>
+      <!-- START panel-->
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4 class="mt0">{{ 'parametrage.view.title' | translateParametrage }}</h4>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label-view">{{ 'parametrage.code.label' | translateParametrage }}</label>
+                <div class="col-sm-8">
+                  {{ parametrage.code }}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label
+                  class="col-sm-4 control-label-view">{{ 'parametrage.valeur.label' | translateParametrage }}</label>
+                <div class="col-sm-8">
+                  {{ parametrage.valeur }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label
+                  class="col-sm-4 control-label-view">{{ 'parametrage.description.label' | translateParametrage }}</label>
+                <div class="col-sm-8">
+                  {{ parametrage.description }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-trace [createdBy]="parametrage.createdBy" [createdOn]="parametrage.createdOn"
+        [updatedBy]="parametrage.updatedBy" [updatedOn]="parametrage.updatedOn"></app-trace>
+    </tab>
+    <tab *ngIf="hasRole('ROLE_HIST_PARAMETRAGE')">
+      <ng-template tabHeading>{{ 'parametrage.historique.title' | translateParametrage }}</ng-template>
+      <app-parametrage-hist [parametrageId]="parametrage.id"></app-parametrage-hist>
+    </tab>
+    <!-- END panel-->
+  </tabset>
+  <!-- START panel-->
+  <p>
+    <div class="panel panel-default">
+      <div class="panel-footer text-right">
+        <button class="btn btn-info"
+          *ngIf="hasRole('ROLE_UPDATE_PARAMETRAGE')  && parametrage.typeValeur.name != 'LOGO'" type="button"
+          [routerLink]="['/parametrage/edit', parametrage.id]"><i class="fa fa-edit"></i>
+          {{ 'common.command.edit' | translate }}</button>
+        <button class="btn" type="button" (click)="retour()">{{ 'common.command.exit' | translate }}</button>
+      </div>
+    </div>
+    <!-- END panel-->
+</div>

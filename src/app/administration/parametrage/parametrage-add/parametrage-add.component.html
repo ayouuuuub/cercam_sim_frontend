@@ -1,0 +1,77 @@
+<div>
+<form ngNoForm [formGroup]="parametrageForm" class="form-validate form-horizontal" (submit)="saveParametrage(parametrageForm.value)" novalidate="">
+
+    <!-- START panel-->
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4 class="mt0">{{ 'parametrage.add.title' | translateParametrage }}</h4>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group required">
+                        <label class="col-sm-4 control-label">{{ 'parametrage.code.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+							<input formControlName="code" class="form-control" type="text" placeholder=""/>
+                            <span class="text-danger" *ngIf="parametrageForm.controls['code'].hasError('required') && (parametrageForm.controls['code'].dirty || parametrageForm.controls['code'].touched)">{{ 'common.message.required' | translate }}</span>
+							</div>
+						</div>
+					</div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrage.valeur.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+							<input formControlName="valeur" class="form-control" type="text" placeholder=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrage.typeValeur.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+                   			<span *ngFor="let typeValeur of typeValeurList" class="radio-inline c-radio c-radio-nofont">
+                          	<label>
+                          	<input type="radio" [value]="typeValeur" formControlName="typeValeur"  class="form-control" [checked]="parametrageForm.controls['typeValeur'].value == typeValeur.name"/>
+                          	<span   class="fa fa-circle"></span>{{typeValeur.displayText}}
+                          	</label>
+                          	</span>
+							</div>
+						</div>
+					</div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrage.description.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+							<textarea rows="3" cols="2" formControlName="description" class="form-control" placeholder=""></textarea>                           
+							</div>
+						</div>
+					</div>
+				</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrage.categorieRole.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+							<drop-down [source]="categorieRoleList" (chargeList)="loadCategorieRoleList($event)"  label="label" [placeholder]="'common.select.notset' | translate " [formcontrol]="parametrageForm.controls['categorieRole']"></drop-down>
+							</div>
+						</div>
+					</div>
+				</div>
+  			</div>
+ 		</div>
+    <!-- END panel-->
+    <!-- START panel-->
+    <p>
+    <div class="panel panel-default">
+        <div class="panel-footer text-right">
+            <button class="btn btn-info" debounceClick (debounceClick)="saveParametrage(parametrageForm.value)"><i class="fa fa-save"></i> {{ 'common.command.saveAndNew' | translate }}</button>
+            <button class="btn btn-info" debounceClick (debounceClick)="saveParametrage(parametrageForm.value)" (click)="saveAndQuit=true"><i class="fa fa-save"></i> {{ 'common.command.saveAndQuit' | translate }}</button>
+            <button class="btn btn-default" type="button" (click)="reset()">{{ 'common.command.reset' | translate }}</button>
+            <button class="btn" type="button" routerLink="/parametrage/list">{{ 'common.command.exit' | translate }}</button>
+        </div>
+    </div>
+    <!-- END panel-->
+</form>
+<!-- END panel-->
+</div>

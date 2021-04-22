@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <!-- top navbar-->
+  <app-sidebar></app-sidebar>
+  <!-- Page content-->
+  <section id="main" class="container">
+    <router-outlet></router-outlet>
+  </section>
+  <!-- Page footer-->
+  <!-- <footer style="background-color: var(--sidecolor);padding: 19px" app-footer></footer> -->
+
+  <!--Toaster-->
+  <toaster-container [toasterconfig]="toasterconfig "></toaster-container>
+</div>

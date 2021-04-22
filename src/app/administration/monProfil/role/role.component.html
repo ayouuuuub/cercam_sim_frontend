@@ -1,0 +1,37 @@
+<!-- START panel-->
+<div class="panel panel-default" *ngIf="roleList">
+    <div class="panel-body">
+        <h4 class="mt0">{{ 'role.name.title' | translateProfil }}</h4>
+        <hr/>
+		<div class="form-group" *ngIf="!readOnly && roleList && roleList.length > 0">
+                    <div class="col-md-12 col-sm-12">
+		<input #filter (keyup)="filterTree(filter.value)" class="form-control" type="text" placeholder="{{ 'common.command.filter' | translate }}"/>
+        </div>
+        </div>
+        <div class="panel panel-default">
+            <div style=" height:100%;">
+<tree-root
+  #tree
+  [nodes]="nodes"
+  [focused]="true"
+  [options]="treeOptions">
+
+  <ng-template #treeNodeTemplate let-node="node" let-index="index" >
+    <input
+      (change)="check( node, $event)" style="width:20px;height:20px;vertical-align:middle;"
+      type="checkbox"
+      [indeterminate]="node.data.indeterminate"
+      [disabled]="readOnly"
+      [checked]="node.data.checked">
+
+     <span title="{{ node.data.name }}">{{ node.data.label }}</span>
+  </ng-template>
+</tree-root>
+             
+                    </div>
+        </div>
+    </div>
+</div>
+
+<!-- END panel-->
+

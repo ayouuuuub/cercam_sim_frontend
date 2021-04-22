@@ -1,0 +1,71 @@
+.login-container {
+  width: 72vw;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0px 2px 12px -5px #000;
+}
+.login-container .row {
+  background: #f7f7f7;
+  height:100%;
+}
+.login-container .row .col-sm-8{
+padding: 3em;
+
+}
+.logo-holder{
+  height: 17em;
+}
+.logo-holder img {
+  height: 100px;
+}
+.authentication {
+  position: absolute;
+  width: 400px;
+  border-radius: 15px;
+  top: 25%;
+  right: 10%;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0px 2px 12px -5px #f7f7f7;
+}
+.authentication legend {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.authentication form label {
+  color :#c5c5c5;
+}
+.authentication form .form-control {
+  border: 0;
+  background: #f5f9fd !important;
+}
+.authentication hr {
+    width: 35%;
+    margin: 0;
+    background: #dd2e39;
+    height: 1px;
+    margin-bottom: 0.5em;
+}
+.authentication button {
+  margin: 15px auto;
+  width: 100%;
+  border: 0;
+  background-color: #3b5e64;
+  color: #fff;
+  min-height: 40px;
+  border-radius: 5px;
+
+}
+
+.loginbackground {
+  background-image: url('/assets/img/loginbackground.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+

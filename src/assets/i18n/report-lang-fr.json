@@ -1,0 +1,44 @@
+{	
+	"report": {
+		"name": {
+			"title": "Rapport"
+		},
+		"list": {
+			"title": "Recherche Rapport"
+		},
+		"edit": {
+			"title": "Editer Rapport"
+		},
+		"add": {
+			"title": "Ajouter Rapport"
+		},
+		"view": {
+			"title": "Consulter Rapport"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Rapport"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"description": {
+			"label": "Description"
+        },
+        "type":{
+            "label": "Type"
+        },
+		"composante": {
+			"label": "Composantes"
+		},
+		"indicateur": {
+			"label": "Indicateur"
+		}
+		
+	}
+}

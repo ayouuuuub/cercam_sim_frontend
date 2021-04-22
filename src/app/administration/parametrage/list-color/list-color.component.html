@@ -1,0 +1,143 @@
+<div>
+  <!-- START panel-->
+  <div class="panel panel-default">
+    <form ngNoForm [formGroup]="parametrageForm" (keydown.enter)="searchParametrages(parametrageForm.value)"
+      class="form-validate form-horizontal" (submit)="searchParametrages(parametrageForm.value)" novalidate="">
+      <div class="panel-body bt">
+        <legend (click)="collapsedInfo = !collapsedInfo">
+          <div class="panel-title">
+            <i class="fa fa-plus-circle" *ngIf="collapsedInfo" aria-hidden="true"></i>
+            <i class="fa fa-minus-circle" *ngIf="!collapsedInfo" baria-hidden="true"></i>
+            {{ 'common.legend.search' | translate }}
+          </div>
+        </legend>
+        <div class="panel-body ng-scope" [collapse]="collapsedInfo">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Code</label>
+                <div class="col-sm-8">
+                  <input formControlName="codeLike" class="form-control" type="text" placeholder="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Valeur</label>
+                <div class="col-sm-8">
+                  <input formControlName="valeurLike" class="form-control" type="text" placeholder="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="col-sm-4 control-label">Region</label>
+                <div class="col-sm-8">
+                  <drop-down [source]="regions" label="label" [placeholder]="'common.select.notset' | translate "
+                    [formcontrol]="parametrageForm.controls['region']"></drop-down>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer text-center">
+            <button class="btn btn-info" type="submit" [disabled]="!parametrageForm.valid"><i class="fa fa-search"></i>
+              {{ 'common.command.search' | translate }}</button>
+            <button class="btn btn-default" type="button"
+              (click)="reset()">{{ 'common.command.reset' | translate }}</button>
+            <button class="btn btn-success" *ngIf="hasRole('ROLE_CREATE_PARAMETRAGE')" type="button"
+              routerLink="/parametrage/add"><i class="fa fa-plus"></i> {{ 'common.command.add' | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- END panel-->
+  <div class="panel panel-default" *ngIf="paginatedParametrageList">
+    <div class="table-responsive">
+      <table id="parametrageDataTable" #parametrageDataTable="mfDataTable1"
+        class="table table-bordered table-striped table-condensed" [dataLength]="totalparametrage"
+        [mfActivePage]="firstParametrage" [mfRowsOnPage]="rowsParametrage" (onChange)="onChangeParametrage($event)"
+        [mfData1]="parametrageList" [mfSortOrder]="sortOrderParametrage" [mfSortBy]="sortFieldParametrage"
+        [mfRowsOnPage]="rowsParametrage">
+        <thead>
+          <tr>
+            <td colspan="6" class="paginator-data">
+              <mfBootstrapPaginator1 [rowsOnPageSet]="[10,20,100]"></mfBootstrapPaginator1>
+            </td>
+          </tr>
+          <tr>
+            <th class="total-data" colspan="3">
+              <span style="padding-left: 2%" *ngIf="parametrageList && totalparametrage > 0 "> {{ totalparametrage }}
+                {{  'common.label.totalRowCount' | translate }}</span>
+            </th>
+            <th class="text-center">
+              <div class="text-center" *ngIf="hasRole('ROLE_EXPORT')">
+                <button type="button" class="btn btn-success btn-xs"
+                  [disabled]="!parametrageList || parametrageList.length <= 0"
+                  (click)="exportParametrage('parametrageDataTable','xls')" title="export csv"><i
+                    class="fa fa-file-excel-o"></i></button>
+                <button type="button" class="btn btn-danger btn-xs"
+                  [disabled]="!parametrageList || parametrageList.length <= 0"
+                  (click)="exportParametrage('parametrageDataTable','pdf')" title="export pdf"><i
+                    class="fa fa-file-pdf-o"></i></button>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th class="text-center column" columnName="region">
+              <mfDefaultSorter1 by="region">Region</mfDefaultSorter1>
+            </th>
+            <th class="text-center column" columnName="code">
+              <mfDefaultSorter1 by="code">Code</mfDefaultSorter1>
+            </th>
+            <th class="text-center column" columnName="valeur">
+              <mfDefaultSorter1 by="valeur">Valeur</mfDefaultSorter1>
+            </th>
+            <th class="actions-col">{{ 'common.label.actions' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of parametrageDataTable.data; let i = index" [attr.data-index]="i">
+            <td *ngIf="i % 5 == 0" rowspan="5" >
+              <span (click)="viewParametrage(item)" style="cursor: pointer;">{{ item.region? item.region.libelle : 'National' }}</span>
+            </td>
+            <td>
+              <span (click)="viewParametrage(item)" style="cursor: pointer;">{{ item.code }}</span>
+            </td>
+            <td>
+              <span (click)="viewParametrage(item)" style="cursor: pointer;">
+                <div class="circle circle-lg" [style.background]=item.valeur></div>{{ item.valeur }}
+              </span>
+            </td>
+            <td class="text-center" rowspan="5" *ngIf="i % 5 == 0">
+              <span title="Visualser" class="btn btn-xs btn-success" (click)="viewParametrage(item)"><i
+                  class="fa fa-eye"></i></span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">
+              <span *ngIf="!parametrageList || totalparametrage == 0" style='text-align:center;'>
+                {{ 'common.list.empty' | translate }}</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+<modalCustom #deleteParametrageModal TitreHeader=" {{'common.text.confirmation' | translate }}" size="modal-sm"
+  [ignoreBackdropClick]="false">
+  <div class="modal-body">
+    {{'common.message.confirm.deleteAll' | translate}}
+  </div>
+  <div class="modal-footer">
+    <button class=" btn  btn-success" type="button"
+      (click)="deleteParametrages()">{{ 'common.text.yes' | translate }}</button>
+    <button class="btn btn-danger" type="button"
+      (click)="deleteParametrageModal.hideViewModal()">{{ 'common.text.no' | translate }}</button>
+  </div>
+</modalCustom>

@@ -1,0 +1,45 @@
+{	
+	"refindicateur": {
+		"name": {
+			"title": "Indicateur"
+		},
+		"list": {
+			"title": "Recherche Indicateur"
+		},
+		"edit": {
+			"title": "Editer Indicateur"
+		},
+		"add": {
+			"title": "Ajouter Indicateur"
+		},
+		"view": {
+			"title": "Liste des valeurs indicateurs"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations Indicateur"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"definition": {
+			"label": "Definition"
+		}
+		,
+		"utilisateur": {
+			"label": "Utilisateur"
+		}
+		
+	}
+}

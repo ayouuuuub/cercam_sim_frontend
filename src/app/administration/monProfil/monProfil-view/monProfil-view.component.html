@@ -1,0 +1,189 @@
+<div>
+        <!-- <tabset>
+            <tab> -->
+                <!-- <ng-template tabHeading>Mon Profil</ng-template> -->
+        <!-- START panel-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4 class="mt0">Mon Profil</h4>
+                        <hr/>
+                        <div class="row" style="margin-bottom: 1%;">
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Identifiant</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.username }}
+                                                </div>
+                                            </div>
+                                        </div>
+                        <!--     <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">Nom</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.nom }}
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Type de Profil</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.profil?.label }}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <div class="row" style="margin-bottom: 1%;">
+                                    <!--  <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Prenom</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.prenom }}
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label-view">Nom</label>
+                                                    <div class="col-sm-8">
+                                                        {{ utilisateur.nom }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                          <!--   <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">email</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.email }}
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Prénom</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.prenom }}
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 1%;">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Email</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.email }}
+                                                </div>
+                                            </div>
+                                        </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">Téléphone</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.telephone }}
+                                        </div>
+                                    </div>
+                                </div>
+                           <!--  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">mobile</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.mobile }}
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="row" style="margin-bottom: 1%;">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Adresse</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.adresse }}
+                                                </div>
+                                            </div>
+                                        </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">Commentaire</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.commentaire }}
+                                        </div>
+                                    </div>
+                                </div>
+                             <!--    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label-view">adresse</label>
+                                        <div class="col-sm-8">
+                                            {{ utilisateur.adresse }}
+                                            </div>
+                                        </div>
+                                    </div> -->
+                            </div>
+                            <div class="row" style="margin-bottom: 1%;">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label-view">Organisme</label>
+                                            <div class="col-sm-8">
+                                                {{ utilisateur.organisme?.label }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 1%;">
+                                            <!--     <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">enabled}</label>
+                                    <div class="col-sm-8">
+
+                                        <span *ngIf="utilisateur.enabled">{{ 'common.text.yes' | translate }}</span>
+                                        <span *ngIf="!utilisateur.enabled">{{ 'common.text.no' | translate }}</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                    <!--         <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label-view">Profil</label>
+                                    <div class="col-sm-8">
+                                        {{ utilisateur.profil?.label }}
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                            <!--row-->
+
+                                <!--row-->
+                        </div>
+                        <app-trace  [createdBy]="utilisateur.createdBy" [createdOn]="utilisateur.createdOn" [updatedBy]="utilisateur.updatedBy" [updatedOn]="utilisateur.updatedOn"></app-trace>
+
+                    </div>
+           <!--  </tab> -->
+          <!--   <tab *ngIf="hasRole('ROLE_READ_INDICATEUR')">
+                <ng-template tabHeading>{{ 'utilisateur.indicateurs.label' | translateUtilisateur }}</ng-template>
+                    <app-indicateur [readOnly]="true" [indicateurList]="indicateurList"></app-indicateur>
+            </tab> -->
+        <!-- END panel-->
+        <!-- </tabset> -->
+        <!-- START panel-->
+        <p>
+        <div class="panel panel-default">
+            <div class="panel-footer text-right">
+                <button  class="btn btn-info" *ngIf="hasRole('ROLE_UPDATE_MONPROFIL')" type="button" [routerLink]="['/monProfil/edit']"><i class="fa fa-edit"></i> {{ 'common.command.edit' | translate }}</button>
+<!--                 <button  class="btn btn-success" *ngIf="hasRole('ROLE_DELETE_UTILISATEUR')" type="button" (click)="deleteUtilisateurModal.showViewModal()"><i class="fa fa-trash"></i> {{ 'common.command.delete' | translate }}</button>
+ -->                <!-- <button class="btn" type="button" (click)="retour()">{{ 'common.command.exit' | translate }}</button> -->
+                  <button class="btn" type="button" (click)="quitAuEspace()">{{ 'common.command.exit' | translate }}</button>
+
+            </div>
+        </div>
+        <!-- END panel-->
+    </div>
+    <modalCustom #deleteUtilisateurModal TitreHeader=" {{'common.text.confirmation' | translate }}" size="modal-sm" [ignoreBackdropClick]="false">
+        <div class="modal-body">
+            {{'common.message.confirm.delete' | translate}}
+        </div>
+        <div class="modal-footer">
+            <button class=" btn  btn-success" type="button" (click)="deleteUtilisateur()">{{ 'common.text.yes' | translate }}</button>
+            <button class="btn btn-danger" type="button" (click)="deleteUtilisateurModal.hideViewModal()">{{ 'common.text.no' | translate }}</button>
+        </div>
+    </modalCustom>

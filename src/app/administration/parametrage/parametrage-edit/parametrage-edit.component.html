@@ -1,0 +1,56 @@
+<div>
+  <form ngNoForm [formGroup]="parametrageForm" class="form-validate form-horizontal"
+    (submit)="updateParametrage(parametrageForm.value)" novalidate="">
+    <input formControlName="id" class="form-control" type="hidden" />
+    <!-- START panel-->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h4 class="mt0">{{ 'parametrage.edit.title' | translateParametrage }}</h4>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group required">
+              <label class="col-sm-4 control-label">{{ 'parametrage.code.label' | translateParametrage }}</label>
+              <div class="col-sm-8">
+                <span>{{parametrage?.code}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="col-sm-4 control-label">{{ 'parametrage.valeur.label' | translateParametrage }}</label>
+              <div class="col-sm-8">
+                <input formControlName="valeur" class="form-control" type="text" placeholder="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="col-sm-4 control-label">{{ 'parametrage.description.label' | translateParametrage }}</label>
+              <div class="col-sm-8">
+                <textarea rows="3" cols="2" formControlName="description" class="form-control"
+                  placeholder=""></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END panel-->
+      <!-- START panel-->
+      
+        <div class="panel panel-default">
+          <div class="panel-footer text-right">
+            <button class="btn btn-info" debounceClick (debounceClick)="updateParametrage(parametrageForm.value)"
+              *ngIf="hasRole('ROLE_UPDATE_PARAMETRAGE')"><i class="fa fa-save"></i>
+              {{ 'common.command.save' | translate }}</button>
+            <button class="btn" type="button"
+              routerLink="/parametrage/list">{{ 'common.command.exit' | translate }}</button>
+          </div>
+        </div>
+    </div>
+        <!-- END panel-->
+  </form>
+  <!-- END panel-->
+</div>

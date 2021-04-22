@@ -1,0 +1,64 @@
+{	
+	"valeurIndicateur": {
+		"name": {
+			"title": "ValeurIndicateur"
+		},
+		"list": {
+			"title": "Recherche valeurIndicateur"
+		},
+		"edit": {
+			"title": "Editer valeurIndicateur"
+		},
+		"add": {
+			"title": "Ajouter valeurIndicateur"
+		},
+		"view": {
+			"title": "Consulter valeurIndicateur"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations valeurIndicateur"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		},
+		"dateSaisie": {
+			"label": "DateSaisie"
+		},
+		"dateSaisieFrom": {
+			"label": "DateSaisie entre"
+		},
+		"dateSaisieTo": {
+			"label": "Et"
+		},
+		"formuleCalcul": {
+			"label": "FormuleCalcul"
+		},
+		"porteeValeur": {
+			"label": "PorteeValeur"
+		},
+		"valeur": {
+			"label": "Valeur"
+		},
+		"commune": {
+			"label": "Commune"
+		},
+		"indicateur": {
+			"label": "Indicateur"
+		},
+		"region": {
+			"label": "Region"
+		},
+		"province": {
+			"label": "Province"
+		}
+	}
+}

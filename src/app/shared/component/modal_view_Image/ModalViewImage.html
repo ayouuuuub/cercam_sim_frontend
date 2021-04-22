@@ -1,0 +1,18 @@
+<div class="modalDialog text-left" style="opacity: 1;pointer-events: auto;background-color: rgba(107, 106, 106,  0.2)" [style.opacity]="(show) ? '1' : '0' " [style.pointer-events]="(show) ? 'auto' : 'none'" [style.background-color]="background" (click)="hideback($event)">
+
+    <!-- Modal content-->
+
+    <div class="modal-content" style="padding: 0px;background-color: rgba(107, 106, 106,  0.2);box-shadow: none;border: 0px;padding: 0px; overflow-x: auto;overflow-y: auto;" [class.col-sm-12]="size=='modal-lg'" [class.col-xs-12]="size=='modal-lg'" [class.col-sm-3]="size=='modal-sm'"
+        [class.col-sm-push-4]="size=='modal-sm'" [class.col-xs-8]="size=='modal-sm'" [class.col-xs-push-2]="size=='modal-sm'" [class.col-md-8]="size=='modal-md'" [class.col-md-push-2]="size=='modal-md'" [class.col-xs-8]="size=='modal-md'" [class.col-xs-push-2]="size=='modal-md'">
+
+        <div class="modal-body" style=" padding: 0px;  background-color: rgba(107, 106, 106,  0.2);  text-align: center; ">
+            <!--   <a class="" (click)="hideViewModal()" aria-label="Close" style=" text-decoration: none; opacity: 1;
+            text-shadow: 0 4px 9px #020202;    color: #fff;  font-size: 68px; ">
+                <span style="margin-left: 88%;" aria-hidden="true">&times;</span>
+            </a> -->
+            <ng-content select=".modal-image"> </ng-content>
+        </div>
+
+    </div>
+
+</div>

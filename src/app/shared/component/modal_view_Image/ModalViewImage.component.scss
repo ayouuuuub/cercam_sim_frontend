@@ -1,0 +1,32 @@
+//modal
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.23);
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.modalDialog>div {
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+}
+
+.close:target {
+    opacity: 0;
+    pointer-events: auto;
+}

@@ -1,0 +1,60 @@
+<div>
+    <form ngNoForm [formGroup]="loginForm"  (keydown.enter)="changePassword(loginForm.value)" class="form-validate form-horizontal" (submit)="changePassword(loginForm.value)" novalidate="">
+
+        <!-- START panel-->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4 class="mt0"  *ngIf="changeDefaultPassword">{{ 'editDefaultPassword.title' | translate }}</h4>
+                <hr/>
+                <div class="row" *ngIf="!changeDefaultPassword">
+                    <div class="col-md-9">
+                        <div class="form-group required">
+                            <label class="col-sm-6 control-label">{{ 'editPassword.label.currentPassword' | translate }}</label>
+                            <div class="col-sm-4">
+                  <input formControlName="oldPassword" class="form-control" type="password" placeholder=""/>
+                                <span class="text-danger" *ngIf="loginForm.controls['oldPassword'].hasError('required') && (loginForm.controls['oldPassword'].dirty || loginForm.controls['oldPassword'].touched)">{{ 'common.message.required' | translate }}</span>
+                   <span class="text-danger" *ngIf="loginForm.controls['oldPassword'].hasError('minlength') && !loginForm.controls['oldPassword'].hasError('required') && (loginForm.controls['oldPassword'].dirty || loginForm.controls['oldPassword'].touched)">{{ 'common.editPassword.label.minLengthPassword' | translate }}</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group required">
+                            <label class="col-sm-6 control-label">{{ 'editDefaultPassword.label.password' | translate }}</label>
+                            <div class="col-sm-4">
+                  <input formControlName="newPassword" class="form-control" type="password" placeholder=""/>
+                                <span class="text-danger" *ngIf="loginForm.controls['newPassword'].hasError('required') && (loginForm.controls['newPassword'].dirty || loginForm.controls['newPassword'].touched)">{{ 'common.message.required' | translate }}</span>
+                   <span class="text-danger" *ngIf="loginForm.controls['newPassword'].hasError('minlength') && !loginForm.controls['newPassword'].hasError('required') && (loginForm.controls['newPassword'].dirty || loginForm.controls['newPassword'].touched)">{{ 'common.editPassword.label.minLengthPassword' | translate }}</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+           <div class="row">
+                    <div class="col-md-9">
+                        <div class="form-group required">
+                            <label class="col-sm-6 control-label">{{ 'editDefaultPassword.label.confirmPassword' | translate }}</label>
+                            <div class="col-sm-4">
+                  <input formControlName="confirmPassword" class="form-control" type="password" placeholder=""/>
+                                <span class="text-danger" *ngIf="loginForm.controls['confirmPassword'].hasError('required') && (loginForm.controls['confirmPassword'].dirty || loginForm.controls['confirmPassword'].touched)">{{ 'common.message.required' | translate }}</span>
+                                 <span class="text-danger" *ngIf="loginForm.controls['confirmPassword'].hasError('minlength') && !loginForm.controls['confirmPassword'].hasError('required') && (loginForm.controls['confirmPassword'].dirty || loginForm.controls['confirmPassword'].touched)">{{ 'common.editPassword.label.minLengthPassword' | translate }}</span>
+                  <span class="text-danger" *ngIf="loginForm.controls['confirmPassword'].hasError('equalTo') && !loginForm.controls['confirmPassword'].hasError('required') && !loginForm.controls['confirmPassword'].hasError('minlength') && (loginForm.controls['confirmPassword'].dirty || loginForm.controls['confirmPassword'].touched)">{{ 'common.editPassword.label.notEqualPassword' | translate }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+         </div>
+        <!-- END panel-->
+
+        <!-- START panel-->
+        <div class="panel panel-default">
+            <div class="panel-footer text-center">
+                <button class="btn btn-info" type="submit" [disabled]="!loginForm.valid">{{ 'common.command.save' | translate }}</button>
+            </div>
+        </div>
+        <!-- END panel-->
+    </form>
+     <toaster-container [toasterconfig]="toasterconf"></toaster-container>
+    <!-- END panel-->
+    </div>

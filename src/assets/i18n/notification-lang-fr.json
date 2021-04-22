@@ -1,0 +1,91 @@
+{
+	"notification": {
+		"name": {
+			"title": "Notification"
+		},
+		"list": {
+			"title": "Recherche notification"
+		},
+		"edit": {
+			"title": "Editer notification"
+		},
+		"add": {
+			"title": "Ajouter notification"
+		},
+		"view": {
+			"title": "Consulter notification"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations notification"
+		},
+		"libelle": {
+			"label": "Libellé"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"lu": {
+			"label": "Lu"
+		},
+		"motif": {
+			"label": "Motif"
+		},
+		"type": {
+			"label": "Type"
+		},
+		"declencheur": {
+			"label": "Déclencheur"
+		},
+		"organisme": {
+			"label": "Organisme d'échange"
+		},
+		"indicateur": {
+			"label": "Indicateur"
+		},
+		"categorieIndicateur": {
+			"label": "Catégorie Indicateur"
+		},
+		"cree": {
+			"label": "Créée par"
+		},
+		"echange": {
+			"label": "Echangée avec"
+		},
+    "attachement": {
+      "label": "Attachement"
+    }
+	}
+,
+	"notificationHist": {
+		"columne": {
+			"label": "Champs"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"utilisateur": {
+			"label": "Utilisateur"
+		},
+		"username": {
+			"label": "Utilisateur"
+		},
+		"oldValue": {
+			"label": "Ancienne valeur"
+		},
+		"newValue": {
+			"label": "Nouvelle valeur"
+		},
+		"typeaction": {
+			"label": "Action"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		}
+	}
+}

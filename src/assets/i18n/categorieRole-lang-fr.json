@@ -1,0 +1,43 @@
+{	
+	"categorieRole": {
+		"name": {
+			"title": "Catégorie rôle"
+		},
+		"list": {
+			"title": "Recherche catégorie rôle"
+		},
+		"edit": {
+			"title": "Editer catégorie rôle"
+		},
+		"add": {
+			"title": "Ajouter catégorie rôle"
+		},
+		"view": {
+			"title": "Consulter catégorie rôle"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations catégorie rôle"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"libelle": {
+			"label": "Libelle"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"parent": {
+			"label": "Parent"
+		}
+	}
+}

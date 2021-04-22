@@ -1,0 +1,70 @@
+{	
+	"parametrage": {
+		"name": {
+			"title": "Paramètrage"
+		},
+		"list": {
+			"title": "Recherche paramètrage"
+		},
+		"edit": {
+			"title": "Editer paramètrage"
+		},
+		"add": {
+			"title": "Ajouter paramètrage"
+		},
+		"view": {
+			"title": "Consulter paramètrage"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations paramètrage"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"valeur": {
+			"label": "Valeur"
+		},
+		"typeValeur": {
+			"label": "Type valeur"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"categorieRole": {
+			"label": "Catégorie"
+		}
+	}
+,
+	"parametrageHist": {
+		"columne": {
+			"label": "Champs"
+		},
+		"date": {
+			"label": "Date"
+		},
+		"utilisateur": {
+			"label": "Utilisateur"
+		},
+		"username": {
+			"label": "Utilisateur"
+		},
+		"oldValue": {
+			"label": "Ancienne valeur"
+		},
+		"newValue": {
+			"label": "Nouvelle valeur"
+		},					
+		"typeaction": {
+			"label": "Action"
+		},
+		"dateFrom": {
+			"label": "Date entre"
+		},
+		"dateTo": {
+			"label": "Et"
+		}
+	}
+}

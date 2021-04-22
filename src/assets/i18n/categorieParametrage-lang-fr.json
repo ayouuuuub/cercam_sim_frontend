@@ -1,0 +1,37 @@
+{	
+	"categorieParametrage": {
+		"name": {
+			"title": "Catégorie paramètrage"
+		},
+		"list": {
+			"title": "Recherche catégorie paramètrage"
+		},
+		"edit": {
+			"title": "Editer catégorie paramètrage"
+		},
+		"add": {
+			"title": "Ajouter catégorie paramètrage"
+		},
+		"view": {
+			"title": "Consulter catégorie paramètrage"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations catégorie paramètrage"
+		},
+		"code": {
+			"label": "Code"
+		},
+		"libelle": {
+			"label": "Libelle"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"actif": {
+			"label": "Actif"
+		}
+	}
+}

@@ -1,0 +1,132 @@
+<div>
+<!-- START panel-->
+<div class="panel panel-default">
+    <form ngNoForm [formGroup]="parametrageHistForm" class="form-validate form-horizontal" (submit)="searchHistParametrages(parametrageHistForm.value)" novalidate="">
+
+        <div class="panel-heading">
+            <div class="panel-title">{{ 'common.legend.search' | translate }}</div>
+        </div>
+
+  		<div class="panel-body bt">
+			<div class="row">
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrageHist.dateFrom.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+ 							<my-date-picker formControlName="dateFrom" [formControl]="parametrageHistForm.controls['dateFrom']" [locale]="locale"  [options]="options" ></my-date-picker>
+							<!--validationMsg="{{ 'common.message.valid.date' | translate }}"></my-date-picker> -->
+						</div>
+					</div>
+				</div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrageHist.dateTo.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+ 							<my-date-picker formControlName="dateTo" [formControl]="parametrageHistForm.controls['dateTo']" [locale]="locale"  [options]="options"></my-date-picker>
+							<!--validationMsg="{{ 'common.message.valid.date' | translate }}"></my-date-picker> --> 
+						</div>
+					</div>
+				</div>			
+			</div>
+			
+			<div class="row">			
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrageHist.typeaction.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+                        	<input formControlName="typeactionLike" class="form-control" type="text" placeholder=""/>
+						</div>
+					</div>
+				</div>			
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">{{ 'parametrageHist.utilisateur.label' | translateParametrage }}</label>
+                        <div class="col-sm-8">
+                            <drop-down [source]="utilisateurList" label="label" [placeholder]="'common.select.notset' | translate " [formcontrol]="parametrageHistForm.controls['utilisateur']"></drop-down>
+							</div>
+						</div>
+					</div>
+</div>
+
+ 		</div>
+        <div class="panel-footer text-center">
+            <button class="btn btn-info" type="submit" [disabled]="!parametrageHistForm.valid">{{ 'common.command.search' | translate }}</button>
+            <button class="btn btn-default" type="button" (click)="reset()">{{ 'common.command.reset' | translate }}</button>
+        </div>
+    </form>
+</div>
+<!-- END panel-->
+<div class="panel panel-default" *ngIf="paginatedParametrageHistList">
+            <div class="table-responsive">
+                <table id="parametrageHistDataTable" #parametrageHistDataTable="mfDataTable1"  class="table table-bordered table-striped table-condensed" [dataLength]="totalparametrageHist" [mfActivePage]="firstParametrageHist" [mfRowsOnPage]="rowsParametrageHist" (onChange)="onChangeParametrageHist($event)" [mfData1]="parametrageHistList" [mfSortOrder]="sortOrderParametrageHist" [mfSortBy]="sortFieldParametrageHist" [mfRowsOnPage]="rowsParametrageHist">
+				<thead>
+				<tr>
+				<td colspan="6" class="paginator-data">
+				<mfBootstrapPaginator1 [rowsOnPageSet]="[10,20,100]"></mfBootstrapPaginator1>
+				</td>
+				</tr>
+			<tr>
+        <th  class="total-data" colspan="5">
+        <span style="padding-left: 2%" *ngIf="parametrageHistList && totalparametrageHist > 0 "> {{ totalparametrageHist }} {{  'common.label.totalRowCount' | translate }}</span>
+        </th>
+		<th class="text-center">
+         <div class="text-center">
+            <button type="button" class="btn btn-success btn-xs" [disabled]="!parametrageHistList || parametrageHistList.length <= 0" (click)="exportParametrageHist('parametrageHistDataTable','xls')" title="export csv"><i class="fa fa-file-excel-o"></i></button>
+            <button type="button" class="btn btn-danger btn-xs" [disabled]="!parametrageHistList || parametrageHistList.length <= 0" (click)="exportParametrageHist('parametrageHistDataTable','pdf')" title="export pdf"><i class="fa fa-file-pdf-o"></i></button>
+        </div>
+        </th>
+        </tr>		
+		<tr>
+        	<th class="text-center column" columnName="date" format="dd/MM/yyyy HH:mm">
+        	 <mfDefaultSorter1 by="date">{{ 'parametrageHist.date.label' | translateParametrage }}</mfDefaultSorter1>
+        	</th>
+         	<th class="text-center column" columnName="username">
+        	 <mfDefaultSorter1 by="username">{{ 'parametrageHist.utilisateur.label' | translateParametrage }}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="typeaction">
+        	 <mfDefaultSorter1 by="typeaction">{{'parametrageHist.typeaction.label' | translateParametrage}}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="colonne">
+        	 <mfDefaultSorter1 by="colonne">{{'parametrageHist.columne.label' | translateParametrage}}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="oldValueFormat">
+        	 <mfDefaultSorter1 by="oldValueFormat">{{ 'parametrageHist.oldValue.label' | translateParametrage }}</mfDefaultSorter1>
+        	</th>
+        	<th class="text-center column" columnName="newValueFormat">
+        	 <mfDefaultSorter1 by="newValueFormat">{{ 'parametrageHist.newValue.label' | translateParametrage }}</mfDefaultSorter1>
+        	</th>         	         	        	        	     
+	        </tr>
+				</thead>
+				<tbody>
+                    <tr *ngFor="let item of parametrageHistDataTable.data; let i = index" [attr.data-index]="i">
+                    <td>
+						<span>{{ item.date }}</span>
+					</td>
+					<td>
+						<span>{{ item.username }}</span>
+					</td>
+					<td>
+					<span>{{ item.typeaction }}</span>
+					</td>
+					<td>
+						<span>{{ item.colonne }}</span>
+					</td>
+					<td>
+						<span>{{ item.oldValueFormat }}</span>
+					</td>
+					<td>
+						<span>{{ item.newValueFormat }}</span>
+					</td>														
+            </tr>
+				</tbody>
+				<tfoot>
+            <tr>
+            <td colspan="6">
+            <span *ngIf="!parametrageHistList || totalparametrageHist == 0" style='text-align:center;'> {{ 'common.list.empty' | translate }}</span>
+            </td>
+            </tr>
+            </tfoot>
+			</table>
+		</div>
+</div>
+</div>

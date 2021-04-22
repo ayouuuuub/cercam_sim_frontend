@@ -1,0 +1,50 @@
+{	
+	"carteThematique": {
+		"name": {
+			"title": "CarteThematique"
+		},
+		"list": {
+			"title": "Recherche Atlas Cartographique"
+		},
+		"edit": {
+			"title": "Modifier Atlas Cartographique"
+		},
+		"add": {
+			"title": "Ajouter Atlas Cartographique"
+		},
+	
+		"chemin": {
+			"label": "Chemin"
+		},
+		"view": {
+			"title": "Consulter Atlas Cartographique"
+		},
+		"historique": {
+			"title": "Historique des modifications"
+		},
+		"legend": {
+			"info": "Informations carteThematique"
+		},
+		"file": {
+			"label": "Fichier"
+		},
+		"libelle": {
+			"label": "Nom"
+		},
+		"apercu": {
+			"label": "Aperçu"
+		},
+		"description": {
+			"label": "Description"
+		},
+		"ordre": {
+			"label": "Ordre"
+		},
+		"actif": {
+			"label": "Actif"
+		},
+		"action": {
+			"label": "Actions"
+		}
+	}
+}

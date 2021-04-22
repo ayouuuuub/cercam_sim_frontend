@@ -1,0 +1,21 @@
+<div class="modalDialog text-left" [style.opacity]="(show) ? '1' : '0' " [style.pointer-events]="(show) ? 'auto' : 'none'" [style.background-color]="background" (click)="hideback($event)">
+
+    <!-- Modal content-->
+
+    <div class="modal-content" [class.col-sm-10]="size=='modal-lg'" [class.col-sm-push-1]="size=='modal-lg'" [class.col-xs-10]="size=='modal-lg'" [class.col-xs-push-1]="size=='modal-lg'" [class.col-sm-3]="size=='modal-sm'" [class.col-sm-push-4]="size=='modal-sm'"
+        [class.col-xs-8]="size=='modal-sm'" [class.col-xs-push-2]="size=='modal-sm'" style="padding: 0px;" [class.col-md-8]="size=='modal-md'" [class.col-md-push-2]="size=='modal-md'" [class.col-xs-8]="size=='modal-md'" [class.col-xs-push-2]="size=='modal-md'">
+
+        <div class="modal-header">
+            <h4 style="display: inline">{{TitreHeader}}</h4>
+            <a [hidden]="!closeIcon" class="close pull-right" (click)="hideViewModal()" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </a>
+        </div>
+
+        <ng-content select=".modal-body"> </ng-content>
+
+        <ng-content select=".modal-footer"> </ng-content>
+
+    </div>
+
+</div>
